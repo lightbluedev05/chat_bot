@@ -1,0 +1,29 @@
+{
+    "saludo": {
+        "entradas": ["hola", "¿cómo estás?", "buenos días", "hey"],
+        "respuestas": [
+            "¡Hola! ¿Cómo puedo ayudarte hoy?",
+            "¡Hola! ¿Qué tal?",
+            "¡Hola! ¿En qué puedo asistirte?",
+            "¿Qué necesitas?"
+        ]
+    },
+    "despedida": {
+        "entradas": ["adiós", "hasta luego", "nos vemos", "me voy", "salir"],
+        "respuestas": [
+            "¡Adiós! Que tengas un buen día.",
+            "Hasta luego, ¡cuídate!",
+            "¡Nos vemos pronto!",
+            "Adiós, ¡que te vaya bien!"
+        ]
+    },
+    "default": {
+        "entradas": ["default"],
+        "respuestas": [
+            "Lo siento, no entiendo esa pregunta.",
+            "No estoy seguro de cómo responder eso.",
+            "Podrías reformular tu pregunta, por favor?",
+            "¿Puedes decirme más sobre lo que necesitas?"
+        ]
+    }
+}
