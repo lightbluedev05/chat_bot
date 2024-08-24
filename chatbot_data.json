@@ -17,6 +17,12 @@
             "Adiós, ¡que te vaya bien!"
         ]
     },
+    "nombre":{
+        "entradas": ["como te llamas", "cual es tu nombre", "quien eres?"],
+        "respuestas": [
+            "soy kevin marcelino"
+        ]
+    },
     "default": {
         "entradas": ["default"],
         "respuestas": [
