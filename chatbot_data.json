@@ -23,6 +23,12 @@
             "soy kevin marcelino"
         ]
     },
+    "kevin":{
+        "entradas": ["cual es la derivada de 5y"],
+        "respuestas": [
+            "5, pensalidad"
+        ]
+    },
     "default": {
         "entradas": ["default"],
         "respuestas": [
