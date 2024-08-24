@@ -11,8 +11,6 @@ def get_levenshtein(string1,string2):
     size_1= len(string1) + 1
     size_2= len(string2) + 1
 
-    #print(f"{size_1} y {size_2}")
-
     matrix = [[0 for n in range(size_1)] for m in range(size_2)]
 
     for i in range(size_2):
