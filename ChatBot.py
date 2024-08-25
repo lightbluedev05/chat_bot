@@ -32,7 +32,61 @@ def get_levenshtein(string1,string2):
         
 
     return matrix[size_2-1][size_1-1]
+## Validate Operation
+def validate_operation(input):
+    
+    numberList = []
+    opList = []
+    counter = 0
+    temp_num = []
 
+    for n in range(0,len(input)):
+        if input[n].isdigit():
+            counter += 1
+            temp_num.append(input[n])
+        else:
+            if counter > 0:
+                numberList.append(int("".join(temp_num)))
+                temp_num.clear()
+                counter = 0
+
+            if input[n] != ' ':
+                opList.append(input[n])
+    numberList.append(int("".join(temp_num)))
+    
+    checkEquals = opList.count('=')
+    validateOp = len(opList)+1==len(numberList) and checkEquals == 1
+
+
+    if validateOp:
+        for n in opList:
+            match n:
+                case '+':
+                    numberList[0] += numberList[1]
+                    numberList.pop(1)
+                case '-':
+                    numberList[0] -= numberList[1]
+                    numberList.pop(1)
+                case 'x' | '*':
+                    numberList[0] *= numberList[1]
+                    numberList.pop(1)
+                case '/':
+                    numberList[0] /= numberList[1]
+                    numberList.pop(1)
+                case '=':
+                    if numberList[0] == numberList[1]:
+                        print("Chatbot: La operacion es correcta!")
+                        return True
+                    else:
+                        print("Chatbot: La operacion es erronea!")
+                        return True
+    else:
+        return False
+        
+
+
+
+## Saludo
 def obtener_saludo():
     hora_actual = datetime.now().hour
     if 5 <= hora_actual < 12:
@@ -51,6 +105,7 @@ def normalizar(texto):
 
 #! Devolver valor de tag
 def get_tag(user_input):
+
     lenghtInput = len(user_input)
     criteria = lenghtInput/5 + 1
     if lenghtInput < 4 :
@@ -81,16 +136,20 @@ def main():
     print(f"{obtener_saludo()}. Bienvenido al chatbot.")
     while True:
         user_input = input("Tú: ")
-        texto_normalizado = normalizar(user_input)
-        tag = get_tag(texto_normalizado)
-        
+        if user_input[0].isdigit() :
+            if validate_operation(user_input) is False:
+                response = get_response("default")
+                print(f"Chatbot: {response}")
 
-        if tag == "despedida":
-            print("Chatbot: ¡Adiós! Que tengas un buen día.")
-            break
+        else:
+            texto_normalizado = normalizar(user_input)
+            tag = get_tag(texto_normalizado)
+            response = get_response(tag)
+            print(f"Chatbot: {response}")
+            if tag == "despedida":
+                break
         
-        response = get_response(tag)
-        print(f"Chatbot: {response}")
+        
 
 if __name__ == "__main__":
     main()
