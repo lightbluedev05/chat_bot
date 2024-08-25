@@ -38,6 +38,59 @@ def get_levenshtein(string1,string2):
 
     return matrix[size_2-1][size_1-1]
 
+## Validate Operation
+def validate_operation(input):
+    
+    numberList = []
+    opList = []
+    counter = 0
+    temp_num = []
+
+    for n in range(0,len(input)):
+        if input[n].isdigit():
+            counter += 1
+            temp_num.append(input[n])
+        else:
+            if counter > 0:
+                numberList.append(int("".join(temp_num)))
+                temp_num.clear()
+                counter = 0
+
+            if input[n] != ' ':
+                opList.append(input[n])
+    numberList.append(int("".join(temp_num)))
+    
+    checkEquals = opList.count('=')
+    validateOp = len(opList)+1==len(numberList) and checkEquals == 1
+
+
+    if validateOp:
+        for n in opList:
+            match n:
+                case '+':
+                    numberList[0] += numberList[1]
+                    numberList.pop(1)
+                case '-':
+                    numberList[0] -= numberList[1]
+                    numberList.pop(1)
+                case 'x' | '*':
+                    numberList[0] *= numberList[1]
+                    numberList.pop(1)
+                case '/':
+                    numberList[0] /= numberList[1]
+                    numberList.pop(1)
+                case '=':
+                    if numberList[0] == numberList[1]:
+                        return "operation_true"
+                    else:
+                        return "operation_false"
+                case _:
+                    return "default"
+
+    else:
+        return "default"
+        
+
 
 def obtener_saludo():
     hora_actual = datetime.now().hour
@@ -84,8 +137,18 @@ def get_response(tag):
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
     chat_entry.delete(0, 'end')
-    texto_normalizado = normalizar(user_input)
-    tag = get_tag(texto_normalizado)
+
+    ## Check for number or "()"" input
+    if user_input[0].isdigit() or user_input[0] == '(':
+        tag = validate_operation(user_input)
+
+    else:
+        texto_normalizado = normalizar(user_input)
+        tag = get_tag(texto_normalizado)
+
+
+    #texto_normalizado = normalizar(user_input)
+    #tag = get_tag(texto_normalizado)
     
     if tag == "despedida":
         print("Chatbot: ¡Adiós! Que tengas un buen día.")
@@ -144,15 +207,18 @@ def main():
     
     while True:
         user_input = input("Tú: ")
-        texto_normalizado = normalizar(user_input)
-        tag = get_tag(texto_normalizado)
-        
-        if tag == "despedida":
-            print("Chatbot: ¡Adiós! Que tengas un buen día.")
-            break
-        
-        response = get_response(tag)
-        print(f"Chatbot: {response}")
+        if user_input[0].isdigit() :
+            if validate_operation(user_input) is False:
+                response = get_response("default")
+                print(f"Chatbot: {response}")
+
+        else:
+            texto_normalizado = normalizar(user_input)
+            tag = get_tag(texto_normalizado)
+            response = get_response(tag)
+            print(f"Chatbot: {response}")
+            if tag == "despedida":
+                break
 
 if __name__ == "__main__":
     main()
