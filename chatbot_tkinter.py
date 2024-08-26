@@ -193,6 +193,8 @@ def main():
     button_entry = ctk.CTkButton(entry_frame, text="Enviar", font=("Arial", 12), command=lambda: print_response(chat_frame, chat_entry))
     button_entry.pack(side="right", padx=(0,20))
     
+    chat_entry.bind("<Return>", lambda event: print_response(chat_frame, chat_entry))
+    
     
     
     hello_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
