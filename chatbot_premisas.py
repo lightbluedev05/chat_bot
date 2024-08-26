@@ -6,9 +6,8 @@ from datetime import datetime
 
 import customtkinter as ctk
 from PIL import Image
-import os
 
-dataFrame = pd.read_json('chatbot_data.json')
+dataFrame = pd.read_json('chatbot.json')
 kevin_image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
 
 def obtener_saludo():
@@ -20,19 +19,16 @@ def obtener_saludo():
     else:
         return "¡Buenas noches!"
 
-#! Normalizar texto
-def normalizar(texto):
-    texto = unidecode(texto).lower().strip()
-    texto = texto.translate(str.maketrans('', '', string.punctuation))
-    texto = texto.replace(" ", "")
+def es_proposicion(texto):
     return texto
+    
 
 #! Devolver valor de tag
 def get_tag(user_input):
     for tag in dataFrame.columns:
-        entradas_normalizadas = [normalizar(entrada) for entrada in dataFrame[tag]["entradas"]]
-        if user_input in entradas_normalizadas:
-            print(entradas_normalizadas)
+        entradas = [entrada for entrada in dataFrame[tag]["entradas"]]
+        if user_input in entradas:
+            print(entradas)
             print(user_input)
             return tag
     return "default"
@@ -44,7 +40,7 @@ def get_response(tag):
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
     chat_entry.delete(0, 'end')
-    texto_normalizado = normalizar(user_input)
+    texto_normalizado = user_input
     tag = get_tag(texto_normalizado)
     
     if tag == "despedida":
@@ -73,6 +69,7 @@ def main():
     root.geometry("500x500")
     root.resizable(False, False)
     root.title("Chatbot GPT 5.0")
+    root.iconbitmap("logo_kevin.ico")
     
     
     title_label = ctk.CTkLabel(root, text="Chatbot GPT 5.0", font=("Arial", 20, "bold"), text_color="white")

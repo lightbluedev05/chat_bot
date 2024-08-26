@@ -5,7 +5,7 @@
             "¡Hola! ¿Cómo puedo ayudarte hoy?",
             "¡Hola! ¿Qué tal?",
             "¡Hola! ¿En qué puedo asistirte?",
-            "¿Qué necesitas?"
+            "¡Hola! ¿Qué necesitas hoy?"
         ]
     },
     "despedida": {
@@ -17,20 +17,8 @@
             "Adiós, ¡que te vaya bien!"
         ]
     },
-    "nombre":{
-        "entradas": ["como te llamas", "cual es tu nombre", "quien eres?"],
-        "respuestas": [
-            "soy kevin marcelino"
-        ]
-    },
-    "kevin":{
-        "entradas": ["cual es la derivada de 5y"],
-        "respuestas": [
-            "5, pensalidad"
-        ]
-    },
-    "palabras_clave":{
-        "entradas": ["es", "mayor", "menor", "par", "existe", "no existe", "impar"]
+    "inicio_preposiciones":{
+        "entradas": ["si", "mayor", "menor", "par", "existe", "no existe", "impar"]
     },
     "default": {
         "entradas": ["default"],
