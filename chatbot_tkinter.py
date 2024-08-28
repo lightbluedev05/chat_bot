@@ -8,7 +8,7 @@ import customtkinter as ctk
 from PIL import Image
 import os
 
-dataFrame = pd.read_json('chatbot_data.json')
+dataFrame = pd.read_json('chatbot_data3.json')
 kevin_image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
 
 ## Levenshtein Algorithm
@@ -130,6 +130,7 @@ def get_tag(user_input):
 
     return "default"
 
+
 #! Devolver respuesta
 def get_response(tag):
     return random.choice(dataFrame[tag]['respuestas'])
@@ -168,6 +169,7 @@ def print_response(chat_frame, chat_entry):
     answer_label.pack(side="left", padx=(5,0))
     
     chat_frame.update_idletasks()
+    
 
 
 #* MI MAIN
