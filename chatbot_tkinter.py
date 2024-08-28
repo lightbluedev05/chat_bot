@@ -212,7 +212,7 @@ def main():
     chat_frame.pack(fill="both", expand=True, padx=40, pady=20)
     
     entry_frame = ctk.CTkFrame(root, fg_color="#232323")
-    entry_frame.pack(fill="x", padx=20, pady=(0,40))
+    entry_frame.pack(fill="x", padx=20, pady=(0,10))
     
     chat_entry = ctk.CTkEntry(entry_frame, font=("Arial", 12),text_color="black", width=50, fg_color="#EBEBEB")
     chat_entry.pack(side="left", padx=20, fill="x", expand=True)
@@ -221,6 +221,9 @@ def main():
     button_entry.pack(side="right", padx=(0,20))
     
     chat_entry.bind("<Return>", lambda event: print_response(chat_frame, chat_entry))
+    
+    made_label = ctk.CTkLabel(root, text="Hecho por: Ricardo, Miguel y Mihael", font=("Arial", 12), text_color="#7E7E7E")
+    made_label.pack(side="bottom", fill="x", pady=(0,20))
     
     
     
