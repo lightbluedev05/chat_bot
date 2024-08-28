@@ -1,0 +1,417 @@
+{
+    "saludo": {
+        "entradas": ["hola", "¿cómo estás?", "buenos días", "hey", "qué tal", "saludos", "holi", "hello", "qué onda", "hi", "buenas"],
+        "respuestas": [
+            "¡Hola! ¿Cómo puedo ayudarte hoy?",
+            "¡Hola! ¿Qué tal?",
+            "¡Hola! ¿En qué puedo asistirte?",
+            "¿Qué necesitas?",
+            "¡Hola! Espero que estés teniendo un buen día.",
+            "¡Saludos! ¿En qué puedo ser útil?",
+            "¡Hola! Aquí estoy para ayudarte.",
+            "¡Hola! ¿Cómo va todo?",
+            "¡Hola! ¿Cómo te sientes hoy?"
+        ]
+    },
+    "despedida": {
+        "entradas": ["adiós", "hasta luego", "nos vemos", "me voy", "salir", "chao", "bye", "hasta pronto", "cuídate", "hasta la vista", "me despido"],
+        "respuestas": [
+            "¡Adiós! Que tengas un buen día.",
+            "Hasta luego, ¡cuídate!",
+            "¡Nos vemos pronto!",
+            "Adiós, ¡que te vaya bien!",
+            "¡Chao! Hasta la próxima.",
+            "¡Cuídate! Espero verte pronto.",
+            "¡Hasta la vista! Cuídate mucho.",
+            "¡Que tengas un buen día! Hasta luego."
+        ]
+    },
+    "nombre": {
+        "entradas": ["como te llamas", "cual es tu nombre", "quien eres", "cómo te dicen", "dime tu nombre", "cuál es tu apodo", "quién eres tú"],
+        "respuestas": [
+            "Soy Kevin Marcelino",
+            "Me llamo Kevin Marcelino",
+            "Puedes llamarme Kevin Marcelino",
+            "Mi nombre es Kevin Marcelino, ¿en qué puedo ayudarte?",
+            "Soy Kevin Marcelino, ¡a tu servicio!"
+        ]
+    },
+    "agradecimiento": {
+        "entradas": ["gracias", "muchas gracias", "te agradezco", "gracias por la ayuda", "mil gracias", "se agradece", "te lo agradezco mucho", "estoy agradecido"],
+        "respuestas": [
+            "¡De nada! Me alegra poder ayudar.",
+            "No hay de qué, estoy aquí para ayudarte.",
+            "¡Con gusto! Estoy para servirte.",
+            "Siempre feliz de ayudar, ¡no dudes en preguntar!",
+            "¡Es un placer ayudarte!",
+            "¡No es nada, para eso estoy!",
+            "¡Estoy aquí para lo que necesites!",
+            "¡Es un placer poder asistirte!"
+        ]
+    },
+    "ayuda": {
+        "entradas": ["necesito ayuda", "me puedes ayudar", "ayúdame", "necesito asistencia", "puedes asistirme", "me echas una mano", "requiero tu ayuda", "me podrías ayudar", "auxilio"],
+        "respuestas": [
+            "¡Claro! ¿En qué necesitas ayuda?",
+            "Estoy aquí para ayudarte, ¿qué necesitas?",
+            "Dime cómo puedo asistirte.",
+            "Por supuesto, ¿qué problema tienes?",
+            "¡Estoy aquí para ayudarte! ¿Qué necesitas?",
+            "¡Cuento con mi apoyo! ¿Cómo puedo ayudarte?",
+            "Estoy a tu disposición, ¿qué te preocupa?",
+            "¡Dime en qué puedo ayudarte y lo haré!"
+        ]
+    },
+    "chiste": {
+        "entradas": ["cuéntame un chiste", "dime un chiste", "hazme reír", "quiero un chiste", "tienes algún chiste", "échame un chiste", "cuéntame algo gracioso"],
+        "respuestas": [
+            "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
+            "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+            "¿Sabes cuál es el animal más antiguo? La cebra, porque está en blanco y negro.",
+            "¿Por qué los esqueletos no pelean entre ellos? Porque no tienen agallas.",
+            "¿Por qué no puedes confiar en los árboles? Porque son muy sombreados.",
+            "¿Qué hace una computadora cuando tiene frío? ¡Se pone un Windows!",
+            "¿Qué le dice un pez a otro pez? ¡Nada!",
+            "¿Por qué el libro de matemáticas estaba triste? Porque tenía demasiados problemas."
+        ]
+    },
+    "clima": {
+        "entradas": ["¿cómo está el clima?", "¿qué tiempo hace?", "¿qué clima hay hoy?", "¿está soleado?", "¿va a llover?", "¿qué tal el clima?", "¿cómo está el tiempo?", "¿qué clima hace afuera?", "¿cómo está el día?"],
+        "respuestas": [
+            "No puedo predecir el clima, pero te recomiendo revisar la app del clima.",
+            "El clima puede variar, mejor revisa tu aplicación favorita de clima.",
+            "No estoy seguro del clima exacto, pero parece un buen día para cualquier cosa.",
+            "El clima puede ser impredecible, pero espero que esté agradable.",
+            "¡Ojalá que el sol brille para ti!",
+            "No tengo acceso a informes meteorológicos, pero espero que el clima sea de tu agrado.",
+            "¡No olvides llevar un paraguas, por si acaso!",
+            "Parece un buen día para salir, ¿no crees?"
+        ]
+    },
+    "curiosidad": {
+        "entradas": ["cuéntame algo interesante", "dime un dato curioso", "quiero saber algo curioso", "tienes algún dato interesante", "cuéntame una curiosidad"],
+        "respuestas": [
+            "¿Sabías que los tiburones no pueden dejar de nadar, o se ahogarían?",
+            "Un dato curioso: El corazón de una ballena azul es tan grande que un ser humano podría nadar a través de sus arterias.",
+            "¿Sabías que el sol tiene aproximadamente 1,3 millones de veces el volumen de la Tierra?",
+            "Una curiosidad: Las hormigas nunca duermen, y no tienen pulmones.",
+            "Dato curioso: Los delfines duermen con un ojo abierto.",
+            "¿Sabías que los astronautas crecen en altura en el espacio debido a la falta de gravedad?",
+            "Un dato interesante: El hielo puede ser más caliente que el fuego, dependiendo de las temperaturas extremas involucradas.",
+            "¿Sabías que hay más estrellas en el universo que granos de arena en todas las playas de la Tierra?"
+        ]
+    },
+    "peliculas": {
+        "entradas": ["recomiéndame una película", "quiero ver una película", "qué película debería ver", "sugiere una película", "me recomiendas una película", "qué película es buena", "quiero ver algo interesante"],
+        "respuestas": [
+            "Te recomiendo ver 'Inception' si te gustan las películas que te hacen pensar.",
+            "¿Qué tal 'El Señor de los Anillos'? Es un clásico de la fantasía.",
+            "Si disfrutas del suspenso, 'El silencio de los inocentes' es una excelente opción.",
+            "Para una noche de comedia, 'Superbad' nunca falla.",
+            "Si buscas algo animado y conmovedor, 'Coco' es una gran elección.",
+            "¿Qué te parece ver 'Matrix'? Es un clásico de la ciencia ficción.",
+            "'Interstellar' es una opción impresionante si te gusta la ciencia y el espacio.",
+            "Si prefieres algo de acción, 'Mad Max: Fury Road' es increíble."
+        ]
+    },
+    "musica": {
+        "entradas": ["recomiéndame una canción", "quiero escuchar música", "qué canción debería escuchar", "sugiere una canción", "me recomiendas una canción", "qué música es buena", "quiero oír algo interesante"],
+        "respuestas": [
+            "Te recomiendo 'Bohemian Rhapsody' de Queen, es un clásico.",
+            "'Hotel California' de The Eagles es una excelente opción si te gusta el rock.",
+            "Si te gusta el pop, 'Blinding Lights' de The Weeknd es una gran elección.",
+            "¿Qué tal escuchar 'Stairway to Heaven' de Led Zeppelin? Es icónica.",
+            "Para algo más relajado, prueba 'Imagine' de John Lennon.",
+            "'Shape of You' de Ed Sheeran es pegajosa y muy popular.",
+            "Si disfrutas del jazz, 'So What' de Miles Davis es un gran tema.",
+            "¿Te gusta la música electrónica? 'One More Time' de Daft Punk nunca decepciona."
+        ]
+    },
+    "comida": {
+        "entradas": ["tengo hambre", "qué puedo comer", "recomiéndame algo para comer", "sugiere un plato", "qué debería comer", "me recomiendas algo de comer"],
+        "respuestas": [
+            "¿Qué tal una pizza? Siempre es una buena opción.",
+            "Si te gusta la comida rápida, una hamburguesa podría estar bien.",
+            "¿Por qué no pruebas algo ligero como una ensalada?",
+            "Un plato de pasta siempre es delicioso y fácil de preparar.",
+            "Si quieres algo reconfortante, una sopa caliente puede ser perfecta.",
+            "¿Qué te parece un burrito? Es sabroso y lleno de sabor.",
+            "Si te gusta lo dulce, ¡un helado nunca está de más!",
+            "¿Por qué no pruebas algo exótico como sushi?"
+        ]
+    },
+    "juegos": {
+        "entradas": ["recomiéndame un juego", "quiero jugar algo", "qué juego debería jugar", "sugiere un juego", "me recomiendas un juego", "qué juego es bueno", "quiero probar un juego nuevo"],
+        "respuestas": [
+            "Si te gusta la acción, prueba 'The Legend of Zelda: Breath of the Wild'.",
+            "Para algo más relajado, 'Animal Crossing: New Horizons' es ideal.",
+            "Si disfrutas de los juegos de disparos, 'Call of Duty: Warzone' es muy popular.",
+            "¿Qué tal un juego de estrategia? 'Civilization VI' es un clásico.",
+            "Para aventuras épicas, 'The Witcher 3: Wild Hunt' es una excelente elección.",
+            "'Among Us' es divertido si te gusta jugar con amigos.",
+            "Si te gustan los juegos de rompecabezas, 'Portal 2' es increíble.",
+            "¿Has probado 'Minecraft'? Es un mundo lleno de posibilidades."
+        ]
+    },
+    "motivacion": {
+        "entradas": ["motívame", "necesito motivación", "anímame", "dame ánimos", "quiero algo motivador", "dame motivación", "inspirame", "di algo inspirador"],
+        "respuestas": [
+            "¡Puedes lograr cualquier cosa que te propongas! Sigue adelante.",
+            "Recuerda que cada pequeño paso te acerca a tu meta.",
+            "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+            "No te rindas, lo mejor está por venir.",
+            "El único límite es el que tú te pongas.",
+            "Cada día es una nueva oportunidad para ser mejor.",
+            "No importa lo lento que vayas, mientras no te detengas.",
+            "El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar."
+        ]
+    },
+    "complemento": {
+        "entradas": ["dime algo bonito", "halágame", "di algo positivo", "quiero un cumplido", "di algo bonito", "compláceme"],
+        "respuestas": [
+            "Eres increíble, nunca lo olvides.",
+            "Tu sonrisa puede iluminar cualquier habitación.",
+            "Tienes un talento único, no dejes de mostrarlo.",
+            "Eres una persona maravillosa, y estoy seguro de que muchos lo piensan.",
+            "Tu presencia hace que todo sea mejor.",
+            "Tienes una fuerza interior que es admirable.",
+            "Eres alguien en quien siempre se puede confiar.",
+            "Tu amabilidad es algo que debería ser celebrado."
+        ]
+    },
+    "consejo": {
+        "entradas": ["dame un consejo", "necesito un consejo", "qué me aconsejas", "qué debería hacer", "qué me recomiendas", "dame una sugerencia"],
+        "respuestas": [
+            "Escucha a tu corazón, pero usa tu cabeza.",
+            "No temas pedir ayuda cuando la necesites.",
+            "Recuerda que es mejor intentar y fallar que nunca haber intentado.",
+            "La paciencia es una virtud, no te apresures.",
+            "Mantén una mente abierta y no tengas miedo de aprender algo nuevo.",
+            "Elige siempre lo que te haga feliz, no lo que otros esperan de ti.",
+            "Aprende de tus errores, son los mejores maestros.",
+            "No dejes que el miedo al fracaso te impida alcanzar tus sueños."
+        ]
+    },
+    "adivinanza": {
+        "entradas": ["dime una adivinanza", "quiero una adivinanza", "tienes una adivinanza", "échame una adivinanza", "reto de adivinanza"],
+        "respuestas": [
+            "Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera. ¿Qué es? (La pera)",
+            "Oro parece, plata no es. Quien no lo adivine bien tonto es. ¿Qué es? (El plátano)",
+            "Tengo cuello, pero no cabeza, y también tengo brazos y no manos. ¿Qué soy? (Una camisa)",
+            "Aunque suene el reloj, nunca lo verás moverse. ¿Qué es? (La sombra)",
+            "Vuelo sin alas, silbo sin boca, y toco sin manos. ¿Qué soy? (El viento)",
+            "Siempre va delante de ti, pero nunca podrás alcanzarlo. ¿Qué es? (El futuro)",
+            "Cien agujeros tengo, y aunque lleno de agujeros estoy, retengo agua. ¿Qué soy? (Una esponja)",
+            "Larga vida me dieron, pero nunca viví. Siempre me esperan, y cuando llego no estoy. ¿Qué soy? (La esperanza)"
+        ]
+    },
+    "curiosidad_tecnologica": {
+        "entradas": ["cuéntame algo interesante sobre tecnología", "dime un dato curioso de tecnología", "quiero saber algo curioso de tecnología", "tienes algún dato tecnológico interesante", "cuéntame una curiosidad tecnológica"],
+        "respuestas": [
+            "¿Sabías que el primer ordenador electrónico, ENIAC, pesaba más de 27 toneladas?",
+            "El primer dominio registrado en Internet fue 'symbolics.com' en 1985.",
+            "Los motores de búsqueda como Google solo rastrean un pequeño porcentaje del contenido de Internet; el resto está en la 'web profunda'.",
+            "El primer correo electrónico de la historia fue enviado por Ray Tomlinson en 1971, y contenía el texto 'QWERTYUIOP'.",
+            "El procesador más pequeño del mundo, creado por IBM, tiene menos de 5 nanómetros de grosor.",
+            "¿Sabías que el primer teléfono móvil de la historia pesaba alrededor de 1 kilogramo y costaba casi 4.000 dólares?",
+            "El sistema operativo Android fue originalmente diseñado para cámaras digitales, antes de convertirse en el líder de los smartphones.",
+            "¿Sabías que cada minuto se suben más de 500 horas de contenido a YouTube?"
+        ]
+    },
+    "frases_cine": {
+        "entradas": ["dime una frase de película", "quiero escuchar una frase famosa", "frase icónica de cine", "cuéntame una frase de cine", "tienes alguna frase de película", "dime una frase icónica"],
+        "respuestas": [
+            "\"Que la fuerza te acompañe.\" - Star Wars",
+            "\"Hasta la vista, baby.\" - Terminator 2",
+            "\"Soy el rey del mundo.\" - Titanic",
+            "\"Houston, tenemos un problema.\" - Apolo 13",
+            "\"El dinero no compra la felicidad, pero prefiero llorar en un Ferrari.\" - Wall Street",
+            "\"May the odds be ever in your favor.\" - Los Juegos del Hambre",
+            "\"Aquí está Johnny.\" - El Resplandor",
+            "\"Elemental, mi querido Watson.\" - Sherlock Holmes"
+        ]
+    },
+    "hechos_historia": {
+        "entradas": ["dime un hecho histórico", "cuéntame algo de historia", "quiero saber algo histórico", "tienes algún dato histórico", "dime un dato de historia", "háblame de historia"],
+        "respuestas": [
+            "En 1969, Neil Armstrong se convirtió en el primer ser humano en pisar la Luna.",
+            "La Gran Muralla China tiene más de 21.000 kilómetros de longitud y fue construida para proteger el Imperio Chino de las invasiones.",
+            "La Revolución Francesa comenzó en 1789 y marcó el fin del absolutismo y el inicio de la democracia moderna.",
+            "Cristóbal Colón descubrió América en 1492, aunque nunca supo que había encontrado un nuevo continente.",
+            "En 1945, la Segunda Guerra Mundial terminó tras la rendición de Alemania y Japón.",
+            "El Imperio Romano fue uno de los imperios más grandes y duraderos de la historia, existiendo durante más de 1.000 años.",
+            "La antigua ciudad de Pompeya fue destruida por la erupción del Monte Vesubio en el año 79 d.C.",
+            "Mahatma Gandhi lideró el movimiento de independencia de la India a través de la no violencia, logrando la independencia en 1947."
+        ]
+    },
+    "frases_inspiradoras": {
+        "entradas": ["dime una frase inspiradora", "quiero escuchar una frase motivadora", "frase icónica de inspiración", "cuéntame una frase inspiradora", "tienes alguna frase inspiradora", "dime una frase de motivación"],
+        "respuestas": [
+            "\"El único modo de hacer un gran trabajo es amar lo que haces.\" - Steve Jobs",
+            "\"No esperes el momento perfecto, toma el momento y hazlo perfecto.\"",
+            "\"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.\" - Albert Schweitzer",
+            "\"La vida es lo que ocurre mientras estás ocupado haciendo otros planes.\" - John Lennon",
+            "\"El único límite es tu mente.\"",
+            "\"No sueñes con el éxito, trabaja para alcanzarlo.\"",
+            "\"El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es ahora.\" - Proverbio chino",
+            "\"Nunca es demasiado tarde para ser lo que podrías haber sido.\" - George Eliot"
+        ]
+    },
+    "recomendaciones_libros": {
+        "entradas": ["recomiéndame un libro", "quiero leer algo nuevo", "qué libro debería leer", "sugiere un libro", "me recomiendas un libro", "qué libro es bueno"],
+        "respuestas": [
+            "Te recomiendo 'Cien años de soledad' de Gabriel García Márquez, es una obra maestra de la literatura.",
+            "¿Qué tal '1984' de George Orwell? Es una novela distópica muy impactante.",
+            "Si disfrutas de la fantasía, 'Harry Potter y la piedra filosofal' de J.K. Rowling es un clásico.",
+            "Para algo más contemporáneo, prueba 'La chica del tren' de Paula Hawkins.",
+            "Si te interesan los misterios, 'El nombre de la rosa' de Umberto Eco es una excelente elección.",
+            "Para un enfoque más filosófico, 'El alquimista' de Paulo Coelho es una buena opción.",
+            "¿Qué te parece 'Orgullo y prejuicio' de Jane Austen? Es una novela clásica con gran profundidad.",
+            "Si buscas una novela de ciencia ficción, 'Dune' de Frank Herbert es imprescindible."
+        ]
+    },
+    "consejos_vida": {
+        "entradas": ["dame un consejo de vida", "qué consejos me das", "quiero saber algún consejo", "sugiere un consejo de vida", "qué me recomiendas para la vida"],
+        "respuestas": [
+            "No te compares con los demás; cada persona tiene su propio camino.",
+            "La gratitud puede transformar tu vida. Agradece las cosas pequeñas.",
+            "El equilibrio entre trabajo y vida personal es crucial para tu bienestar.",
+            "Aprende a decir no cuando sea necesario; proteger tu tiempo es importante.",
+            "La comunicación abierta y honesta puede resolver muchos problemas.",
+            "Establece metas claras y trabaja de manera constante hacia ellas.",
+            "La resiliencia es clave; aprende a adaptarte a los cambios y desafíos.",
+            "Rodéate de personas que te inspiren y te apoyen en tus objetivos."
+        ]
+    },
+    "sabias_que": {
+        "entradas": ["sabías que", "dime algo interesante", "cuéntame un dato interesante", "quiero saber algo sorprendente"],
+        "respuestas": [
+            "¿Sabías que el corazón de un camarón está en su cabeza?",
+            "Un dato curioso: El rayo de una tormenta puede calentar el aire a más de 30,000 grados Celsius.",
+            "¿Sabías que los pulpos tienen tres corazones?",
+            "Los flamencos rosados obtienen su color de los carotenoides en su dieta.",
+            "¿Sabías que las medusas han existido por más de 500 millones de años?",
+            "El récord mundial de la mayor cantidad de agujeros en una hoja de papel es de 1,000,000.",
+            "¿Sabías que los caballos tienen un rango de visión de casi 360 grados?",
+            "El helado fue inventado en China hace más de 2,000 años."
+        ]
+    },
+    "eventos_actualidad": {
+        "entradas": ["qué está pasando en el mundo", "cuéntame de las noticias recientes", "qué eventos actuales son importantes", "dime algo de actualidad"],
+        "respuestas": [
+            "No tengo acceso a las noticias en tiempo real, pero te recomiendo revisar las principales fuentes de noticias para las últimas actualizaciones.",
+            "Para estar al tanto de eventos actuales, puedes seguir sitios web de noticias o aplicaciones de noticias.",
+            "Revisa las noticias en línea para conocer los eventos más recientes y relevantes.",
+            "Te sugiero que consultes tu fuente de noticias favorita para las actualizaciones más recientes.",
+            "Mantente informado sobre los eventos actuales a través de medios de comunicación confiables.",
+            "Para actualizaciones en tiempo real, las aplicaciones de noticias en tu teléfono son muy útiles.",
+            "Revisa las redes sociales para obtener las últimas noticias y eventos de interés.",
+            "Consulta periódicos en línea para estar al tanto de los acontecimientos recientes."
+        ]
+    },
+    "viajes": {
+        "entradas": ["dame recomendaciones de viaje", "dónde debería viajar", "sugiere un destino", "qué lugar debería visitar", "quiero ideas para viajar"],
+        "respuestas": [
+            "Te recomiendo visitar Kyoto, Japón, por su rica historia y hermosos templos.",
+            "¿Qué tal una visita a la Riviera Maya en México? Sus playas son increíbles.",
+            "Si buscas aventura, Nueva Zelanda ofrece paisajes impresionantes y actividades al aire libre.",
+            "Para una experiencia cultural, Barcelona, España, es una gran opción con su arquitectura y gastronomía.",
+            "Si prefieres algo más exótico, prueba Marruecos, conocido por sus mercados y desiertos.",
+            "¿Qué opinas de Islandia? Sus paisajes naturales y auroras boreales son únicos.",
+            "Para una experiencia relajante, las Islas Maldivas ofrecen playas paradisíacas y resorts de lujo.",
+            "Praga, República Checa, es un destino encantador con su arquitectura medieval y ambiente histórico."
+        ]
+    },
+    "tecnologia_nueva": {
+        "entradas": ["dime algo sobre tecnología nueva", "qué hay de nuevo en tecnología", "cuéntame sobre las últimas innovaciones tecnológicas", "quiero saber sobre tecnología reciente"],
+        "respuestas": [
+            "La inteligencia artificial está avanzando rápidamente, con nuevas aplicaciones en salud, finanzas y educación.",
+            "Los dispositivos de realidad aumentada están ganando popularidad y se utilizan en diversos campos, desde el entretenimiento hasta la educación.",
+            "Los coches autónomos están cada vez más cerca de ser una realidad común en nuestras carreteras.",
+            "La tecnología de 5G está empezando a desplegarse globalmente, ofreciendo velocidades de internet mucho más rápidas.",
+            "Las innovaciones en tecnología de baterías están mejorando la duración y eficiencia de los dispositivos electrónicos.",
+            "La computación cuántica está en desarrollo y promete revolucionar la forma en que procesamos información.",
+            "La impresión 3D está evolucionando y se está utilizando para crear desde prototipos hasta artículos de uso cotidiano.",
+            "Los avances en biotecnología están permitiendo nuevas técnicas en tratamientos médicos y la edición genética."
+        ]
+    },
+    "horario": {
+        "entradas": ["¿qué hora es?", "¿cuál es la hora?", "¿qué hora tienes?", "¿me puedes decir la hora?", "¿qué hora es ahora?"],
+        "respuestas": [
+            "Lo siento, no puedo decirte la hora. Por favor, consulta un reloj.",
+            "No tengo acceso a la hora actual, te recomiendo que mires en tu dispositivo.",
+            "No puedo proporcionarte la hora, pero puedes revisarla en tu teléfono o computadora.",
+            "Para saber la hora, por favor verifica en un reloj o en la pantalla de tu dispositivo."
+        ]
+    },
+    "ubicacion": {
+        "entradas": ["¿dónde estás?", "¿en qué lugar te encuentras?", "¿cuál es tu ubicación?", "¿dónde te encuentras?", "¿dónde estás ubicado?"],
+        "respuestas": [
+            "Soy un chatbot, no tengo una ubicación física.",
+            "No tengo una ubicación física, estoy aquí para asistirte en línea.",
+            "No tengo un lugar físico donde me encuentre, solo existo en el ciberespacio.",
+            "Como asistente virtual, no tengo una ubicación concreta."
+        ]
+    },
+    "horario_atencion": {
+        "entradas": ["¿cuál es tu horario de atención?", "¿a qué hora estás disponible?", "¿cuándo estás disponible?", "¿tienes horario de atención?", "¿cuándo puedo contactarte?"],
+        "respuestas": [
+            "Estoy disponible para ayudarte las 24 horas del día, los 7 días de la semana.",
+            "Puedes contactarme en cualquier momento, estoy aquí para asistirte siempre.",
+            "No tengo un horario específico, estoy disponible en cualquier momento que me necesites.",
+            "Estoy aquí todo el tiempo para ayudarte, no tengo un horario de atención definido."
+        ]
+    },
+    "error": {
+        "entradas": ["cometí un error", "me equivoqué", "esto no es correcto", "hay un problema", "algo salió mal"],
+        "respuestas": [
+            "No te preocupes, ¿en qué puedo ayudarte para solucionar el problema?",
+            "Entiendo, ¿puedes darme más detalles sobre el error para que pueda asistirte mejor?",
+            "Si cometiste un error, no dudes en decirme cómo puedo ayudarte a corregirlo.",
+            "Estoy aquí para ayudarte. ¿Puedes explicarme más sobre el problema que enfrentaste?"
+        ]
+    },
+    "informacion_empresa": {
+        "entradas": ["¿qué hace tu empresa?", "¿cuál es el objetivo de la empresa?", "dime sobre tu empresa", "¿qué servicios ofrece tu empresa?", "háblame de la empresa"],
+        "respuestas": [
+            "Somos una empresa dedicada a [descripción de la empresa y servicios].",
+            "Nuestra empresa se especializa en [servicios o productos].",
+            "Ofrecemos [breve descripción de los servicios o productos de la empresa].",
+            "En nuestra empresa nos enfocamos en [descripción breve del enfoque y servicios]."
+        ]
+    },
+    "informacion_contacto": {
+        "entradas": ["¿cómo te contacto?", "¿cuál es tu información de contacto?", "¿cómo puedo hablar contigo?", "dame tu contacto", "¿cómo te puedo encontrar?"],
+        "respuestas": [
+            "Para contactarme, simplemente envíame un mensaje aquí.",
+            "Puedes comunicarte conmigo a través de este chat.",
+            "Estoy disponible a través de este medio, solo envíame tu mensaje.",
+            "Para contactar conmigo, sigue usando este chat para tus preguntas."
+        ]
+    },
+    "operation_true":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es verdadero!",
+            "La operacion es correcta!",
+            "El resultado es el indicado!"
+        ]
+    },
+    "operation_false":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es falso!",
+            "La operación esta mal!",
+            "Te equivocaste?, está mal!"
+        ]
+    },
+    "default": {
+        "entradas": ["default"],
+        "respuestas": [
+            "Lo siento, no entiendo esa pregunta.",
+            "No estoy seguro de cómo responder eso.",
+            "Podrías reformular tu pregunta, por favor?",
+            "¿Puedes decirme más sobre lo que necesitas?"
+        ]
+    }
+}
