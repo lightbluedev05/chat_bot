@@ -38,9 +38,17 @@ def get_levenshtein(string1,string2):
 
     return matrix[size_2-1][size_1-1]
 
+## Find OP character
+def isOperator(char):
+    search = set('+x*-/=()')
+    if char in search:
+        return True
+    else:
+        return False
+
 ## Validate Operation
 def validate_operation(input):
-    
+    input=input.replace(" ","")
     numberList = []
     opList = []
     counter = 0
@@ -56,39 +64,56 @@ def validate_operation(input):
                 temp_num.clear()
                 counter = 0
 
-            if input[n] != ' ':
+            if input[n] != ' ' and isOperator(input[n]):
                 opList.append(input[n])
+            else:
+                return "default"
     numberList.append(int("".join(temp_num)))
     
     checkEquals = opList.count('=')
-    validateOp = len(opList)+1==len(numberList) and checkEquals == 1
+    if opList.count('(') > 0:
+        return "default"
+        
+    validateOp = len(opList)+1-2*opList.count('(')==len(numberList) and checkEquals == 1
 
 
     if validateOp:
-        for n in opList:
-            match n:
-                case '+':
-                    numberList[0] += numberList[1]
-                    numberList.pop(1)
-                case '-':
-                    numberList[0] -= numberList[1]
-                    numberList.pop(1)
-                case 'x' | '*':
-                    numberList[0] *= numberList[1]
-                    numberList.pop(1)
-                case '/':
-                    numberList[0] /= numberList[1]
-                    numberList.pop(1)
-                case '=':
-                    if numberList[0] == numberList[1]:
-                        return "operation_true"
-                    else:
-                        return "operation_false"
-                case _:
-                    return "default"
+        terms = [""]
+        count = 0
+        countMK2 = 0
+        for n in numberList:
+            terms[count] = terms[count] + " " + str(n)
+            if countMK2 < (len(opList)):
+                if opList[countMK2] == '=':
+                    count+=1
+                    countMK2 +=1
+                    terms.append("")
+                elif opList[countMK2] == '(' or opList[countMK2] == ')':
+                    while True:
+                        terms[count] = terms[count] + " " + str(opList[countMK2])
+                        countMK2 +=1
+                        if not opList[countMK2] == '(' or opList[countMK2] == ')':
+                            break
+                else:
+                    terms[count] = terms[count] + " " + str(opList[countMK2])
+                    countMK2 +=1
+                
+                
+        
+        #print(f"{terms[0]} = {terms[1]}")
+
+
+        if eval(terms[0]) == eval(terms[1]):
+            return "operation_true"
+        else:
+            return "operation_false"
+
+
 
     else:
         return "default"
+        
+        
         
 
 
