@@ -9,7 +9,7 @@ from PIL import Image
 import os
 
 dataFrame = pd.read_json('chatbot_data3.json')
-kevin_image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
+image = ctk.CTkImage(Image.open("logo.png"), size=(30, 30))
 
 ## Levenshtein Algorithm
 def get_levenshtein(string1,string2):
@@ -163,7 +163,7 @@ def print_response(chat_frame, chat_entry):
     
     answer_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
     answer_frame.pack(side="top", fill="x", padx=5, pady=(5,0))
-    kevin_frame = ctk.CTkLabel(answer_frame, text="", image=kevin_image)
+    kevin_frame = ctk.CTkLabel(answer_frame, text="", image=image)
     kevin_frame.pack(side="left", padx=0)
     answer_label = ctk.CTkLabel(answer_frame, justify="left", corner_radius=5, width=300, wraplength=300, fg_color="#DADADA", text=response, font=("Arial", 12), text_color="black", anchor="w")
     answer_label.pack(side="left", padx=(5,0))
@@ -201,7 +201,7 @@ def main():
     
     hello_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
     hello_frame.pack(side="top", fill="x", padx=5, pady=(5,0))
-    kevin_frame = ctk.CTkLabel(hello_frame,text="", image=kevin_image)
+    kevin_frame = ctk.CTkLabel(hello_frame,text="", image=image)
     kevin_frame.pack(side="left", padx=0)
     hello_label = ctk.CTkLabel(hello_frame, corner_radius=5, width=300, fg_color="#DADADA", text=f"{obtener_saludo()}. Bienvenido al Chatbot GPT 5.0", font=("Arial", 12), text_color="black", anchor="w")
     hello_label.pack(side="left", padx=(5,0))
