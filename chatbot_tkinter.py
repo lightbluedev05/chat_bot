@@ -8,8 +8,220 @@ import customtkinter as ctk
 from PIL import Image
 import os
 
+<<<<<<< Updated upstream
 dataFrame = pd.read_json('chatbot_data.json')
 kevin_image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
+=======
+import sys
+import json
+
+dataFrame = pd.read_json('chatbot_data3.json')
+image = ctk.CTkImage(Image.open("logo.png"), size=(30, 30))
+
+## FUNCIONES PARA LA GENERACION DE TEXTOOOOOOO *************************************************************
+
+def updateJson(target, source):
+    with open(target, "w") as file:
+        json.dump(source, file)
+
+def loadData(filename):
+    if not os.path.exists(filename):
+        with open(filename, "w") as file:
+            json.dump({}, file)
+    with open(filename, "r") as file:
+        data = json.load(file)
+    return data
+
+def learn(file, input):
+    words = input.split(" ")
+    for i in range (0,len(words)-1):
+        present = words[i]
+        future = words[i+1]
+        ## Save data to file
+        if present not in file:
+            file[present] = {future:1} ## New Entry
+        else:
+            continuesList = file[present]
+            if future not in continuesList:
+                file[present][future] = 1   ## New *next* Entry
+            else:
+                file[present][future] = file[present][future] + 1 ## Increment if already found entry
+    
+    return file
+
+
+def mainLearning(input):
+
+    dictionaryFile = "dictionary.json"
+    inputFile = "" #Nothing there
+    ##dictionaryFile, inputFile = readArguments()
+    dictionary = loadData(dictionaryFile)
+
+    dictionary = learn(dictionary,input)
+    updateJson(dictionaryFile,dictionary)
+
+    #if inputFile == "":
+    #    while True:
+    #        uInput = input(">> ")
+    #        if uInput == "":
+    #            break
+    #        dictionary = learn(dictionary, uInput)
+    #        updateJson(dictionaryFile,dictionary)
+    #else:
+    #    ## Help
+    #    print("Nothing There")
+    
+def getNextWord(searchP, file):
+    if searchP not in file:
+        return list(file.keys())[random.randint(0, len(file) - 1)]
+    else:
+        candidates = file[searchP]
+        candidatesNorm = []
+
+        for word in candidates:
+            freq = candidates[word]
+            for i in range(0,freq):
+                candidatesNorm.append(word)
+        
+        return candidatesNorm[random.randint(0,len(candidatesNorm)-1)]
+
+
+def loadTData(filename):
+    if not os.path.exists(filename):
+        sys.exit("Error:: No dictionary.json")
+    
+    try:
+        with open(filename, "r") as file:
+            data = json.load(file)
+    except json.JSONDecodeError:
+        sys.exit("Error:: Invalid JSON in the file.")
+    
+    return data
+
+
+def mainGeneration(searchParameter, length):
+    file = "dictionary.json"
+
+    dictionary = loadTData(file)
+
+    output = ""
+    for i in range(0,length):
+        nextWord = getNextWord(searchParameter,dictionary)
+        output = output + " " + nextWord
+        searchParameter = nextWord
+    
+    return output
+
+
+## *********************************************************************************************************
+
+
+## Levenshtein Algorithm
+def get_levenshtein(string1,string2):
+    size_1= len(string1) + 1
+    size_2= len(string2) + 1
+
+    matrix = [[0 for n in range(size_1)] for m in range(size_2)]
+
+    for i in range(size_2):
+        matrix[i][0] = i
+    for j in range(size_1):
+        matrix[0][j] = j
+
+    for i in range(1,size_2):
+        for j in range(1,size_1):
+            cost = 0 if string1[j-1] == string2[i-1] else 1
+            
+            matrix[i][j] = min(
+                matrix[i-1][j]+1,
+                matrix[i][j-1]+1,
+                matrix[i-1][j-1] + cost)
+
+            if i > 1 and j>1 and string1[j-1] == string2[i-2] and string1[j-2] == string2[i-1]:
+                matrix[i][j] = min(matrix[i][j],matrix[i-2][j-2]+1)
+        
+
+    return matrix[size_2-1][size_1-1]
+
+## Find OP character
+def isOperator(char):
+    search = set('+x*-/=()')
+    if char in search:
+        return True
+    else:
+        return False
+
+## Validate Operation
+def validate_operation(input):
+    input=input.replace(" ","")
+    numberList = []
+    opList = []
+    counter = 0
+    temp_num = []
+
+    for n in range(0,len(input)):
+        if input[n].isdigit():
+            counter += 1
+            temp_num.append(input[n])
+        else:
+            if counter > 0:
+                numberList.append(int("".join(temp_num)))
+                temp_num.clear()
+                counter = 0
+
+            if input[n] != ' ' and isOperator(input[n]):
+                opList.append(input[n])
+            else:
+                return "default"
+    numberList.append(int("".join(temp_num)))
+    
+    checkEquals = opList.count('=')
+    if opList.count('(') > 0:
+        return "default"
+        
+    validateOp = len(opList)+1-2*opList.count('(')==len(numberList) and checkEquals == 1
+
+
+    if validateOp:
+        terms = [""]
+        count = 0
+        countMK2 = 0
+        for n in numberList:
+            terms[count] = terms[count] + " " + str(n)
+            if countMK2 < (len(opList)):
+                if opList[countMK2] == '=':
+                    count+=1
+                    countMK2 +=1
+                    terms.append("")
+                elif opList[countMK2] == '(' or opList[countMK2] == ')':
+                    while True:
+                        terms[count] = terms[count] + " " + str(opList[countMK2])
+                        countMK2 +=1
+                        if not opList[countMK2] == '(' or opList[countMK2] == ')':
+                            break
+                else:
+                    terms[count] = terms[count] + " " + str(opList[countMK2])
+                    countMK2 +=1
+                
+                
+        
+        #print(f"{terms[0]} = {terms[1]}")
+
+
+        if eval(terms[0]) == eval(terms[1]):
+            return "operation_true"
+        else:
+            return "operation_false"
+
+
+
+    else:
+        return "default"
+        
+        
+        
+
+>>>>>>> Stashed changes
 
 def obtener_saludo():
     hora_actual = datetime.now().hour
@@ -37,13 +249,36 @@ def get_tag(user_input):
 
 #! Devolver respuesta
 def get_response(tag):
+    if tag == "get-unique-response":
+        return mainGeneration("&&&&&&&&&&",9) ## to be reworked or something
+
+
     return random.choice(dataFrame[tag]['respuestas'])
 
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
     chat_entry.delete(0, 'end')
+<<<<<<< Updated upstream
     texto_normalizado = normalizar(user_input)
     tag = get_tag(texto_normalizado)
+=======
+
+    ## Check for number or "()"" input
+    if user_input[0].isdigit() or user_input[0] == '(':
+        tag = validate_operation(user_input)
+
+    else:
+
+        mainLearning(user_input)
+        tag = "get-unique-response"
+        
+        #texto_normalizado = normalizar(user_input)
+        #tag = get_tag(texto_normalizado)
+
+
+    #texto_normalizado = normalizar(user_input)
+    #tag = get_tag(texto_normalizado)
+>>>>>>> Stashed changes
     
     if tag == "despedida":
         print("Chatbot: ¡Adiós! Que tengas un buen día.")
