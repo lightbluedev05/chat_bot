@@ -8,8 +8,109 @@ import customtkinter as ctk
 from PIL import Image
 import os
 
+import sys
+import json
+
 dataFrame = pd.read_json('chatbot_data3.json')
 image = ctk.CTkImage(Image.open("logo.png"), size=(30, 30))
+
+## FUNCIONES PARA LA GENERACION DE TEXTOOOOOOO *************************************************************
+
+def updateJson(target, source):
+    with open(target, "w") as file:
+        json.dump(source, file)
+
+def loadData(filename):
+    if not os.path.exists(filename):
+        with open(filename, "w") as file:
+            json.dump({}, file)
+    with open(filename, "r") as file:
+        data = json.load(file)
+    return data
+
+def learn(file, input):
+    words = input.split(" ")
+    for i in range (0,len(words)-1):
+        present = words[i]
+        future = words[i+1]
+        ## Save data to file
+        if present not in file:
+            file[present] = {future:1} ## New Entry
+        else:
+            continuesList = file[present]
+            if future not in continuesList:
+                file[present][future] = 1   ## New *next* Entry
+            else:
+                file[present][future] = file[present][future] + 1 ## Increment if already found entry
+    
+    return file
+
+
+def mainLearning(input):
+
+    dictionaryFile = "dictionary.json"
+    inputFile = "" #Nothing there
+    ##dictionaryFile, inputFile = readArguments()
+    dictionary = loadData(dictionaryFile)
+
+    dictionary = learn(dictionary,input)
+    updateJson(dictionaryFile,dictionary)
+
+    #if inputFile == "":
+    #    while True:
+    #        uInput = input(">> ")
+    #        if uInput == "":
+    #            break
+    #        dictionary = learn(dictionary, uInput)
+    #        updateJson(dictionaryFile,dictionary)
+    #else:
+    #    ## Help
+    #    print("Nothing There")
+    
+def getNextWord(searchP, file):
+    if searchP not in file:
+        return list(file.keys())[random.randint(0, len(file) - 1)]
+    else:
+        candidates = file[searchP]
+        candidatesNorm = []
+
+        for word in candidates:
+            freq = candidates[word]
+            for i in range(0,freq):
+                candidatesNorm.append(word)
+        
+        return candidatesNorm[random.randint(0,len(candidatesNorm)-1)]
+
+
+def loadTData(filename):
+    if not os.path.exists(filename):
+        sys.exit("Error:: No dictionary.json")
+    
+    try:
+        with open(filename, "r") as file:
+            data = json.load(file)
+    except json.JSONDecodeError:
+        sys.exit("Error:: Invalid JSON in the file.")
+    
+    return data
+
+
+def mainGeneration(searchParameter, length):
+    file = "dictionary.json"
+
+    dictionary = loadTData(file)
+
+    output = ""
+    for i in range(0,length):
+        nextWord = getNextWord(searchParameter,dictionary)
+        output = output + " " + nextWord
+        searchParameter = nextWord
+    
+    return output
+
+
+## *********************************************************************************************************
+
 
 ## Levenshtein Algorithm
 def get_levenshtein(string1,string2):
@@ -97,12 +198,25 @@ def validate_operation(input):
                 else:
                     terms[count] = terms[count] + " " + str(opList[countMK2])
                     countMK2 +=1
+                
+                
+        
+        #print(f"{terms[0]} = {terms[1]}")
+
+
         if eval(terms[0]) == eval(terms[1]):
             return "operation_true"
         else:
             return "operation_false"
+
+
+
     else:
         return "default"
+        
+        
+        
+
 
 def obtener_saludo():
     hora_actual = datetime.now().hour
@@ -144,16 +258,12 @@ def get_tag(user_input):
 
 
 #! Devolver respuesta
-def get_response(tag, user_input):
-    if tag == "preprosiciones":
-        entradas_normalizadas = [normalizar(entrada) for entrada in dataFrame[tag]["entradas"]]
-        for i in range(len(entradas_normalizadas)):
-            if normalizar(user_input) in entradas_normalizadas[i]:
-                return dataFrame[tag]["respuestas"][i]
-        else:
-            return "No se encontró coincidencia."        
-    else:
-        return random.choice(dataFrame[tag]['respuestas'])
+def get_response(tag):
+    if tag == "get-unique-response":
+        return mainGeneration("&&&&&&&&&&",9) ## to be reworked or something
+
+
+    return random.choice(dataFrame[tag]['respuestas'])
 
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
@@ -164,8 +274,12 @@ def print_response(chat_frame, chat_entry):
         tag = validate_operation(user_input)
 
     else:
-        texto_normalizado = normalizar(user_input)
-        tag = get_tag(texto_normalizado)
+
+        mainLearning(user_input)
+        tag = "get-unique-response"
+        
+        #texto_normalizado = normalizar(user_input)
+        #tag = get_tag(texto_normalizado)
 
 
     #texto_normalizado = normalizar(user_input)

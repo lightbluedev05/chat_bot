@@ -6,6 +6,8 @@ from datetime import datetime
 
 dataFrame = pd.read_json('chatbot_data.json')
 
+<<<<<<< Updated upstream
+=======
 ## Levenshtein Algorithm
 def get_levenshtein(string1,string2):
     size_1= len(string1) + 1
@@ -81,52 +83,11 @@ def validate_operation(input):
                 else:
                     terms[count] = terms[count] + " " + str(opList[countMK2])
             countMK2 +=1
-            
-        #switchCon = False
-        #for n in opList:
-
-        #    if not switchCon:
-        #        term1 = term1 + " " + str(numberList[0])
-        #        numberList.pop(0)
-
-        #        if n == '=':
-        #            switchCon = True
-        #            continue
-
-        #        term1 = term1 + " " + str(n)
-        #    else:
-        #        term2 = term2 + " " + str(numberList[0])
-        #        numberList.pop(0)
-        #        term2 = term2 + " " + str(n)
-        
-        #" ".join(term1)
-        #" ".join(term2)
 
         if eval(terms[0]) == eval(terms[1]):
             return "operation_true"
         else:
             return "operation_false"
-
-            #match n:
-            #    case '+':
-            #        numberList[0] += numberList[1]
-            #        numberList.pop(1)
-            #    case '-':
-            #        numberList[0] -= numberList[1]
-            #        numberList.pop(1)
-            #    case 'x' | '*':
-            #        numberList[0] *= numberList[1]
-            #        numberList.pop(1)
-            #    case '/':
-            #        numberList[0] /= numberList[1]
-            #        numberList.pop(1)
-            #    case '=':
-            #        if numberList[0] == numberList[1]:
-            #            return "operation_true"
-            #        else:
-            #            return "operation_false"
-            #    case _:
-            #        return "default"
 
     else:
         return "default"
@@ -136,6 +97,7 @@ def validate_operation(input):
 
 
 ## Saludo
+>>>>>>> Stashed changes
 def obtener_saludo():
     hora_actual = datetime.now().hour
     if 5 <= hora_actual < 12:
