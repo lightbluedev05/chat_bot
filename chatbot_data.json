@@ -23,6 +23,22 @@
             "soy kevin marcelino"
         ]
     },
+    "operation_true":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es verdadero!",
+            "La operacion es correcta!",
+            "El resultado es el indicado!"
+        ]
+    },
+    "operation_false":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es falso!",
+            "La operación esta mal!",
+            "Te equivocaste?, está mal!"
+        ]
+    },
     "default": {
         "entradas": ["default"],
         "respuestas": [

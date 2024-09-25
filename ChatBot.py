@@ -116,10 +116,25 @@ def normalizar(texto):
 
 #! Devolver valor de tag
 def get_tag(user_input):
+
+    lenghtInput = len(user_input)
+    criteria = lenghtInput/5 + 1
+    if lenghtInput < 4 :
+        return "default"
+
     for tag in dataFrame.columns:
         entradas_normalizadas = [normalizar(entrada) for entrada in dataFrame[tag]["entradas"]]
+
         if user_input in entradas_normalizadas:
             return tag
+        else:
+            for entrada in entradas_normalizadas:
+                ## Validate
+                if abs(len(entrada)-lenghtInput) > 3 or criteria < get_levenshtein(user_input,entrada):
+                    continue
+                else:
+                    return tag
+
     return "default"
 
 #! Devolver respuesta
@@ -128,18 +143,24 @@ def get_response(tag):
 
 #* MI MAIN
 def main():
+    
     print(f"{obtener_saludo()}. Bienvenido al chatbot.")
     while True:
         user_input = input("Tú: ")
-        texto_normalizado = normalizar(user_input)
-        tag = get_tag(texto_normalizado)
+        if user_input[0].isdigit() :
+            if validate_operation(user_input) is False:
+                response = get_response("default")
+                print(f"Chatbot: {response}")
+
+        else:
+            texto_normalizado = normalizar(user_input)
+            tag = get_tag(texto_normalizado)
+            response = get_response(tag)
+            print(f"Chatbot: {response}")
+            if tag == "despedida":
+                break
         
-        if tag == "despedida":
-            print("Chatbot: ¡Adiós! Que tengas un buen día.")
-            break
         
-        response = get_response(tag)
-        print(f"Chatbot: {response}")
 
 if __name__ == "__main__":
     main()

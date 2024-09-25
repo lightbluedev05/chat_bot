@@ -236,11 +236,26 @@ def normalizar(texto):
 
 #! Devolver valor de tag
 def get_tag(user_input):
+    lenghtInput = len(user_input)
+    criteria = lenghtInput/5 + 1
+    if lenghtInput < 4 :
+        return "default"
+
     for tag in dataFrame.columns:
         entradas_normalizadas = [normalizar(entrada) for entrada in dataFrame[tag]["entradas"]]
+
         if user_input in entradas_normalizadas:
             return tag
+        else:
+            for entrada in entradas_normalizadas:
+                ## Validate
+                if abs(len(entrada)-lenghtInput) > 3 or criteria < get_levenshtein(user_input,entrada):
+                    continue
+                else:
+                    return tag
+
     return "default"
+
 
 #! Devolver respuesta
 def get_response(tag):
@@ -278,7 +293,9 @@ def print_response(chat_frame, chat_entry):
     question_label = ctk.CTkLabel(question_frame, justify="right", corner_radius=5, wraplength=300, fg_color="#DADADA", text=user_input, font=("Arial", 12), text_color="black", anchor="e")
     question_label.pack(side="right", padx=(80,0))
     
-    response = get_response(tag)
+    print(tag)
+    response = get_response(tag, user_input)
+    print(tag)
     
     answer_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
     answer_frame.pack(side="top", fill="x", padx=5, pady=(5,0))
@@ -288,6 +305,7 @@ def print_response(chat_frame, chat_entry):
     answer_label.pack(side="left", padx=(5,0))
     
     chat_frame.update_idletasks()
+    
 
 
 #* MI MAIN
@@ -313,6 +331,8 @@ def main():
     button_entry = ctk.CTkButton(entry_frame, text="Enviar", font=("Arial", 12), command=lambda: print_response(chat_frame, chat_entry))
     button_entry.pack(side="right", padx=(0,20))
     
+    chat_entry.bind("<Return>", lambda event: print_response(chat_frame, chat_entry))
+    
     
     
     hello_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
@@ -323,19 +343,6 @@ def main():
     hello_label.pack(side="left", padx=(5,0))
     
     root.mainloop()
-    
-    
-    while True:
-        user_input = input("Tú: ")
-        texto_normalizado = normalizar(user_input)
-        tag = get_tag(texto_normalizado)
-        
-        if tag == "despedida":
-            print("Chatbot: ¡Adiós! Que tengas un buen día.")
-            break
-        
-        response = get_response(tag)
-        print(f"Chatbot: {response}")
 
 if __name__ == "__main__":
     main()
