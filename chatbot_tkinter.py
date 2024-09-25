@@ -259,7 +259,7 @@ def get_tag(user_input):
 
 #! Devolver respuesta
 def get_response(tag):
-    if tag == "get-unique-response":
+    if tag == "default":
         return mainGeneration("&&&&&&&&&&",9) ## to be reworked or something
 
 
@@ -276,10 +276,10 @@ def print_response(chat_frame, chat_entry):
     else:
 
         mainLearning(user_input)
-        tag = "get-unique-response"
+        #tag = "get-unique-response"
         
-        #texto_normalizado = normalizar(user_input)
-        #tag = get_tag(texto_normalizado)
+        texto_normalizado = normalizar(user_input)
+        tag = get_tag(texto_normalizado)
 
 
     #texto_normalizado = normalizar(user_input)
