@@ -1,0 +1,823 @@
+{
+    "saludo": {
+        "entradas": [
+            "hola", "¿cómo estás?", "buenos días", "hey", "qué tal", "saludos", "holi", "hello", "qué onda", "hi", "buenas",
+            "saludos cordiales", "qué pasa", "buenas tardes", "buenas noches", "cómo andas", "cómo va todo", "¿qué haces?", "¿cómo te va?", "¿qué hay?", "¿qué cuentas?",
+            "¡Hola! ¿Qué tal?", "¡Hola! ¿En qué puedo asistirte?", "¡Hola! Espero que estés teniendo un buen día.",
+            "¡Saludos! ¿En qué puedo ser útil?", "¡Hola! Aquí estoy para ayudarte.", "¡Hola! ¿Cómo va todo?",
+            "¡Hola! ¿Cómo te sientes hoy?", "¡Hola! ¿Qué tal tu día?", "¡Hola! ¿Cómo puedo ayudarte?",
+            "¡Hola! ¿En qué puedo ayudarte?", "¡Hola! ¿Cómo te encuentras?", "¡Hola! ¿Qué hay de nuevo?",
+            "¡Hola! ¿Cómo te va hoy?", "¡Hola! ¿Cómo estás hoy?", "¡Hola! ¿Cómo está todo?", "¡Hola! ¿Cómo ha ido tu día?",
+            "¡Hola! ¿Qué tal tu jornada?", "¡Hola! ¿Qué tal todo hoy?", "¡Hola! ¿Cómo te ha ido?",
+            "¡Hola! ¿Qué tal va todo?", "¡Hola! ¿Cómo está todo contigo?", "¡Hola! ¿Cómo va tu día?",
+            "¡Hola! ¿Qué tal ha ido tu jornada?"
+        ],
+        "respuestas": [
+            "¡Hola! ¿Cómo puedo ayudarte hoy?", "¡Hola! ¿Qué tal?", "¡Hola! ¿En qué puedo asistirte?", "¿Qué necesitas?",
+            "¡Hola! Espero que estés teniendo un buen día.", "¡Saludos! ¿En qué puedo ser útil?", "¡Hola! Aquí estoy para ayudarte.",
+            "¡Hola! ¿Cómo va todo?", "¡Hola! ¿Cómo te sientes hoy?", "¡Hola! ¿Qué tal tu día?", "¡Hola! ¿Cómo puedo ayudarte?",
+            "¡Hola! ¿En qué puedo ayudarte?", "¡Hola! ¿Cómo te encuentras?", "¡Hola! ¿Qué hay de nuevo?", "¡Hola! ¿Cómo te va hoy?",
+            "¡Hola! ¿Cómo estás hoy?", "¡Hola! ¿Cómo está todo?", "¡Hola! ¿Cómo ha ido tu día?", "¡Hola! ¿Qué tal tu jornada?",
+            "¡Hola! ¿Qué tal todo hoy?", "¡Hola! ¿Cómo te ha ido?", "¡Hola! ¿Qué tal va todo?", "¡Hola! ¿Cómo está todo contigo?",
+            "¡Hola! ¿Cómo va tu día?", "¡Hola! ¿Qué tal ha ido tu jornada?", "¡Hola! ¿Cómo te encuentras hoy?",
+            "¡Hola! ¿Cómo está tu día?", "¡Hola! ¿Cómo has estado?", "¡Hola! ¿Cómo ha sido tu día?", "¡Hola! ¿Cómo te va?",
+            "¡Hola! ¿Qué tal todo contigo?", "¡Hola! ¿Cómo ha ido el día?", "¡Hola! ¿Qué tal ha ido tu jornada hoy?",
+            "¡Hola! ¿Cómo te va esta mañana?", "¡Hola! ¿Cómo va todo hoy?", "¡Hola! ¿Cómo te sientes hoy?"
+        ]
+    },
+    "despedida": {
+        "entradas": [
+            "adiós", "hasta luego", "nos vemos", "me voy", "salir", "chao", "bye", "hasta pronto", "cuídate", "hasta la vista",
+            "me despido", "hasta la próxima", "nos vemos luego", "hasta mañana", "adiós por ahora", "cuídate mucho",
+            "que te vaya bien", "hasta la próxima vez", "nos vemos en otro momento", "adiós, que tengas un buen día",
+            "chao, nos vemos pronto", "me voy, adiós", "hasta luego, cuídate", "nos vemos pronto, adiós", "me despido por ahora",
+            "hasta luego, que te vaya bien", "adiós, cuídate", "chao, que tengas un buen día", "hasta la próxima ocasión",
+            "nos vemos después", "hasta luego, ¡que tengas un buen día!", "adiós por ahora, ¡cuídate!", "hasta luego, ¡cuida de ti!"
+        ],
+        "respuestas": [
+            "¡Adiós! Que tengas un buen día.", "Hasta luego, ¡cuídate!", "¡Nos vemos pronto!", "Adiós, ¡que te vaya bien!",
+            "¡Chao! Hasta la próxima.", "¡Cuídate! Espero verte pronto.", "¡Hasta la vista! Cuídate mucho.",
+            "¡Que tengas un buen día! Hasta luego.", "¡Hasta luego! Que te vaya bien.", "Adiós, espero verte pronto.",
+            "¡Cuídate y nos vemos en otra ocasión!", "¡Hasta pronto! Que tengas un gran día.", "¡Nos vemos la próxima vez!",
+            "¡Adiós! Que todo te salga bien.", "¡Hasta luego! Cuídate mucho.", "¡Chao! Que tengas un buen día.",
+            "¡Adiós! Hasta la próxima.", "¡Hasta luego! Que te vaya de maravilla.", "¡Nos vemos luego! Cuídate mucho.",
+            "¡Hasta pronto! Que tengas un excelente día.", "¡Adiós por ahora! Que todo te salga bien.",
+            "¡Chao! Espero verte pronto.", "¡Hasta la próxima! Cuídate.", "¡Hasta luego! Que tengas un buen día.",
+            "¡Adiós! Que te vaya muy bien.", "¡Hasta la vista! Que todo esté bien contigo.", "¡Hasta luego! Nos vemos pronto.",
+            "¡Chao! Cuídate mucho."
+        ]
+    },
+    "nombre": {
+        "entradas": [
+            "como te llamas", "¿cuál es tu nombre?", "quién eres", "cómo te llaman", "dime tu nombre", "cuál es tu apodo",
+            "quién eres tú", "cómo te llamas tú", "cuál es tu nombre completo", "qué nombre tienes", "¿cómo te llamas tú?",
+            "¿cómo te llamas?", "¿cuál es tu nombre?", "¿cómo te dicen?", "¿cuál es tu nombre completo?", "dime tu apodo",
+            "¿cómo te conocen?", "¿qué nombre te han dado?", "¿cómo te llamas de verdad?", "¿cuál es tu nombre completo?",
+            "¿cuál es tu nombre completo?", "¿cuál es tu apodo?", "¿cómo te llaman en tu casa?", "¿cuál es tu nombre completo?"
+        ],
+        "respuestas": [
+            "Soy Kevin Marcelino", "Me llamo Kevin Marcelino", "Puedes llamarme Kevin Marcelino",
+            "Mi nombre es Kevin Marcelino, ¿en qué puedo ayudarte?", "Soy Kevin Marcelino, ¡a tu servicio!",
+            "Me puedes llamar Kevin", "Mi nombre es Kevin", "Soy conocido como Kevin Marcelino",
+            "Me llaman Kevin Marcelino", "Así me llaman: Kevin Marcelino", "Mi nombre completo es Kevin Marcelino",
+            "Puedes decirme simplemente Kevin", "Mi nombre completo es Kevin Marcelino", "Mi nombre completo es Kevin Marcelino",
+            "Me llaman Kevin Marcelino en casa", "Soy conocido como Kevin Marcelino", "Puedes llamarme simplemente Kevin",
+            "Me conocen como Kevin Marcelino", "Mi nombre es Kevin Marcelino, aunque puedes llamarme Kevin",
+            "Mi nombre completo es Kevin M.", "Puedes llamarme simplemente Kevin M."
+        ]
+    },
+    "agradecimiento": {
+        "entradas": ["gracias", "muchas gracias", "te agradezco", "gracias por la ayuda", "mil gracias", "se agradece", "te lo agradezco mucho", "estoy agradecido"],
+        "respuestas": [
+            "¡De nada! Me alegra poder ayudar.",
+            "No hay de qué, estoy aquí para ayudarte.",
+            "¡Con gusto! Estoy para servirte.",
+            "Siempre feliz de ayudar, ¡no dudes en preguntar!",
+            "¡Es un placer ayudarte!",
+            "¡No es nada, para eso estoy!",
+            "¡Estoy aquí para lo que necesites!",
+            "¡Es un placer poder asistirte!"
+        ]
+    },
+    "ayuda": {
+        "entradas": ["necesito ayuda", "me puedes ayudar", "ayúdame", "necesito asistencia", "puedes asistirme", "me echas una mano", "requiero tu ayuda", "me podrías ayudar", "auxilio"],
+        "respuestas": [
+            "¡Claro! ¿En qué necesitas ayuda?",
+            "Estoy aquí para ayudarte, ¿qué necesitas?",
+            "Dime cómo puedo asistirte.",
+            "Por supuesto, ¿qué problema tienes?",
+            "¡Estoy aquí para ayudarte! ¿Qué necesitas?",
+            "¡Cuento con mi apoyo! ¿Cómo puedo ayudarte?",
+            "Estoy a tu disposición, ¿qué te preocupa?",
+            "¡Dime en qué puedo ayudarte y lo haré!"
+        ]
+    },
+    "chiste": {
+        "entradas": ["cuéntame un chiste", "dime un chiste", "hazme reír", "quiero un chiste", "tienes algún chiste", "échame un chiste", "cuéntame algo gracioso"],
+        "respuestas": [
+            "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
+            "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+            "¿Sabes cuál es el animal más antiguo? La cebra, porque está en blanco y negro.",
+            "¿Por qué los esqueletos no pelean entre ellos? Porque no tienen agallas.",
+            "¿Por qué no puedes confiar en los árboles? Porque son muy sombreados.",
+            "¿Qué hace una computadora cuando tiene frío? ¡Se pone un Windows!",
+            "¿Qué le dice un pez a otro pez? ¡Nada!",
+            "¿Por qué el libro de matemáticas estaba triste? Porque tenía demasiados problemas."
+        ]
+    },
+    "clima": {
+        "entradas": ["¿cómo está el clima?", "¿qué tiempo hace?", "¿qué clima hay hoy?", "¿está soleado?", "¿va a llover?", "¿qué tal el clima?", "¿cómo está el tiempo?", "¿qué clima hace afuera?", "¿cómo está el día?"],
+        "respuestas": [
+            "No puedo predecir el clima, pero te recomiendo revisar la app del clima.",
+            "El clima puede variar, mejor revisa tu aplicación favorita de clima.",
+            "No estoy seguro del clima exacto, pero parece un buen día para cualquier cosa.",
+            "El clima puede ser impredecible, pero espero que esté agradable.",
+            "¡Ojalá que el sol brille para ti!",
+            "No tengo acceso a informes meteorológicos, pero espero que el clima sea de tu agrado.",
+            "¡No olvides llevar un paraguas, por si acaso!",
+            "Parece un buen día para salir, ¿no crees?"
+        ]
+    },
+    "curiosidad": {
+        "entradas": ["cuéntame algo interesante", "dime un dato curioso", "quiero saber algo curioso", "tienes algún dato interesante", "cuéntame una curiosidad"],
+        "respuestas": [
+            "¿Sabías que los tiburones no pueden dejar de nadar, o se ahogarían?",
+            "Un dato curioso: El corazón de una ballena azul es tan grande que un ser humano podría nadar a través de sus arterias.",
+            "¿Sabías que el sol tiene aproximadamente 1,3 millones de veces el volumen de la Tierra?",
+            "Una curiosidad: Las hormigas nunca duermen, y no tienen pulmones.",
+            "Dato curioso: Los delfines duermen con un ojo abierto.",
+            "¿Sabías que los astronautas crecen en altura en el espacio debido a la falta de gravedad?",
+            "Un dato interesante: El hielo puede ser más caliente que el fuego, dependiendo de las temperaturas extremas involucradas.",
+            "¿Sabías que hay más estrellas en el universo que granos de arena en todas las playas de la Tierra?"
+        ]
+    },
+    "peliculas": {
+        "entradas": ["recomiéndame una película", "quiero ver una película", "qué película debería ver", "sugiere una película", "me recomiendas una película", "qué película es buena", "quiero ver algo interesante"],
+        "respuestas": [
+            "Te recomiendo ver 'Inception' si te gustan las películas que te hacen pensar.",
+            "¿Qué tal 'El Señor de los Anillos'? Es un clásico de la fantasía.",
+            "Si disfrutas del suspenso, 'El silencio de los inocentes' es una excelente opción.",
+            "Para una noche de comedia, 'Superbad' nunca falla.",
+            "Si buscas algo animado y conmovedor, 'Coco' es una gran elección.",
+            "¿Qué te parece ver 'Matrix'? Es un clásico de la ciencia ficción.",
+            "'Interstellar' es una opción impresionante si te gusta la ciencia y el espacio.",
+            "Si prefieres algo de acción, 'Mad Max: Fury Road' es increíble."
+        ]
+    },
+    "musica": {
+        "entradas": ["recomiéndame una canción", "quiero escuchar música", "qué canción debería escuchar", "sugiere una canción", "me recomiendas una canción", "qué música es buena", "quiero oír algo interesante"],
+        "respuestas": [
+            "Te recomiendo 'Bohemian Rhapsody' de Queen, es un clásico.",
+            "'Hotel California' de The Eagles es una excelente opción si te gusta el rock.",
+            "Si te gusta el pop, 'Blinding Lights' de The Weeknd es una gran elección.",
+            "¿Qué tal escuchar 'Stairway to Heaven' de Led Zeppelin? Es icónica.",
+            "Para algo más relajado, prueba 'Imagine' de John Lennon.",
+            "'Shape of You' de Ed Sheeran es pegajosa y muy popular.",
+            "Si disfrutas del jazz, 'So What' de Miles Davis es un gran tema.",
+            "¿Te gusta la música electrónica? 'One More Time' de Daft Punk nunca decepciona."
+        ]
+    },
+    "comida": {
+        "entradas": [
+            "¿qué comemos?", "recomiéndame algo de comer", "¿cuál es tu comida favorita?", "¿qué hay para cenar?", "¿qué me sugieres comer?",
+            "¿qué platos te gustan?", "¿cuál es tu restaurante favorito?", "¿qué me recomiendas para almorzar?", "¿tienes alguna receta para mí?",
+            "¿qué tipo de comida prefieres?", "¿alguna sugerencia para la cena?", "¿qué opinas de la comida italiana?", "¿qué tal la comida mexicana?",
+            "¿te gusta la comida rápida?", "¿cuál es tu comida favorita?", "¿qué puedes recomendar para el desayuno?", "¿qué hay para comer?",
+            "¿qué tipo de comida te gusta más?", "¿qué opinas de la comida japonesa?", "¿alguna recomendación para una comida ligera?"
+        ],
+        "respuestas": [
+            "Me encanta la comida italiana, especialmente la pasta.", "Te recomendaría probar un plato de sushi.", "La comida mexicana es deliciosa, especialmente los tacos.",
+            "La comida rápida tiene su encanto, pero es mejor disfrutarla con moderación.", "Para el desayuno, unos pancakes con frutas son una excelente opción.",
+            "La comida japonesa es muy sabrosa, especialmente el ramen.", "Una ensalada fresca puede ser una buena opción para una comida ligera.",
+            "Te sugiero probar una pizza con tus ingredientes favoritos.", "La comida mediterránea es muy saludable y sabrosa.", "Para la cena, un plato de pescado con verduras es ideal.",
+            "La comida tailandesa tiene una gran variedad de sabores, te podría gustar.", "Los platos tradicionales como la lasaña son siempre una buena elección.",
+            "Si te gusta la comida picante, prueba algunos platillos de la cocina india.", "Para el almuerzo, un sandwich con vegetales y proteínas puede ser una opción rápida y saludable.",
+            "La comida china es variada y tiene opciones para todos los gustos.", "La comida libanesa es deliciosa y tiene muchas opciones vegetarianas.", "Los postres como los brownies son una delicia para terminar la comida."
+        ]
+    },
+    "juegos": {
+        "entradas": [
+            "¿cuál es tu juego favorito?", "recomiéndame un juego", "¿qué juegos te gustan?", "¿has probado algún juego nuevo?", "¿cuál es el mejor juego para ti?",
+            "¿qué juegos están de moda?", "¿qué juego recomendarías para jugar con amigos?", "¿te gustan los juegos de mesa?", "¿algún juego que deba probar?",
+            "¿qué opinas de los juegos de rol?", "¿te gustan los juegos de estrategia?", "¿has jugado algún juego de aventura interesante?", "¿qué juegos de video recomiendas?",
+            "¿cuál es tu juego de mesa favorito?", "¿qué juegos estás jugando ahora?", "¿qué opinas de los juegos en línea?", "¿tienes algún juego favorito para móvil?",
+            "¿qué juegos de mesa has probado?", "¿qué juego de rol recomendarías?", "¿cuál es el mejor juego para pasar el tiempo?"
+        ],
+        "respuestas": [
+            "Uno de mis juegos favoritos es el ajedrez, es excelente para desarrollar estrategias.", "Te recomendaría probar 'The Legend of Zelda', es un juego de aventura muy emocionante.",
+            "Me gustan mucho los juegos de rol como 'Dungeons & Dragons'.", "Los juegos de mesa como 'Catan' son geniales para jugar con amigos.", "Si te gustan los juegos de estrategia, 'Civilization' es muy recomendable.",
+            "Los juegos en línea como 'Among Us' pueden ser muy divertidos con amigos.", "Para móviles, 'Monument Valley' es un juego visualmente impresionante y entretenido.",
+            "Los juegos de rol en línea como 'World of Warcraft' ofrecen una experiencia inmersiva.", "En cuanto a juegos de mesa, 'Ticket to Ride' es una excelente opción.",
+            "Prueba 'Minecraft' si te gustan los juegos de construcción y creatividad.", "Para una experiencia de aventura, 'The Witcher 3' es un gran juego.",
+            "Los juegos de estrategia en tiempo real como 'StarCraft' son muy adictivos.", "Para algo más relajado, 'Stardew Valley' es una opción encantadora.",
+            "Los juegos de mesa clásicos como 'Scrabble' también son divertidos y desafiantes.", "Para juegos de rol, 'Persona 5' es muy recomendado por su historia y estilo."
+        ]
+    },
+    "motivación": {
+        "entradas": [
+            "necesito motivación", "¿cómo puedo motivarme?", "dame un consejo motivacional", "¿tienes alguna frase motivadora?", "¿qué hago para mantenerme motivado?",
+            "dame un empujón para seguir adelante", "¿cómo superar la falta de motivación?", "necesito un buen consejo para motivarme", "¿alguna frase para inspirarme?",
+            "¿cómo mantener la motivación en proyectos largos?", "dame un consejo para no rendirme", "¿cómo mantener la actitud positiva?", "¿alguna técnica para motivarme?",
+            "necesito inspiración para mis metas", "¿cómo seguir adelante cuando estoy desmotivado?", "dame una frase para levantar el ánimo", "¿cómo ser más positivo?",
+            "necesito un consejo para no decaer", "¿qué hacer cuando pierdo la motivación?", "dame una razón para seguir adelante"
+        ],
+        "respuestas": [
+            "Recuerda que cada pequeño paso cuenta, sigue adelante y verás los resultados.", "La perseverancia es clave. No te rindas, el éxito está a la vuelta de la esquina.",
+            "Aquí tienes una frase motivadora: 'El único límite a nuestros logros de mañana es nuestra duda de hoy.'", "Mantén tus metas claras y trabaja cada día para acercarte a ellas.",
+            "A veces, solo necesitamos un pequeño empujón. Enfócate en lo que has logrado y en lo que aún puedes alcanzar.", "Cada desafío es una oportunidad para crecer. Sigue adelante y aprenderás mucho en el camino.",
+            "No te desanimes, incluso los días difíciles pasan. Mantén la vista en tus metas y sigue trabajando hacia ellas.", "La motivación viene y va, pero el compromiso te llevará a donde quieres estar.",
+            "Aquí tienes una frase para inspirarte: 'El éxito es la suma de pequeños esfuerzos repetidos día tras día.'", "Cuando te sientas desmotivado, recuerda por qué comenzaste y visualiza tu éxito.", "Busca en tus pasiones y en tus logros previos para encontrar la fuerza para seguir adelante.",
+            "Aprovecha cada día como una oportunidad para avanzar. No importa cuán pequeño sea el progreso, sigue moviéndote.", "La actitud positiva es un hábito. Practícalo y verás cómo mejora tu perspectiva.",
+            "Enfócate en lo que puedes controlar y haz lo mejor que puedas. El resto vendrá con el tiempo.", "El camino puede ser largo, pero cada paso te acerca a tus sueños. Mantén la vista en el objetivo.",
+            "Recuerda que las dificultades son solo escalones hacia el éxito. Sigue subiendo y nunca te rindas.", "Cada desafío es una oportunidad para demostrar tu fortaleza. No te detengas, sigue adelante.",
+            "No olvides que tu esfuerzo vale la pena. El éxito es la recompensa por no rendirse."
+        ]
+    },
+    "complemento": {
+        "entradas": [
+            "¿qué me recomiendas para mejorar esto?", "dame un consejo adicional", "¿cómo puedo complementar esto?", "¿alguna sugerencia extra?", "¿qué podría agregar?",
+            "¿tienes alguna recomendación adicional?", "¿cómo puedo mejorar esto aún más?", "dame una idea extra", "¿qué más debería considerar?",
+            "¿algún consejo adicional para esto?", "¿qué otras opciones tengo?", "¿cómo puedo optimizar esto?", "¿qué más podría hacer?",
+            "¿alguna sugerencia para mejorar esto?", "¿qué otro enfoque podría intentar?", "¿cómo podría complementar esto mejor?", "¿alguna recomendación para mejorar esto?",
+            "¿qué más necesito saber?", "¿cómo puedo hacer esto más efectivo?", "dame un consejo para mejorar esto", "¿qué otras ideas tienes?"
+        ],
+        "respuestas": [
+            "Podrías considerar agregar más detalles para enriquecer la información.", "Un enfoque adicional sería investigar las últimas tendencias en el área.", "Agregar más ejemplos prácticos podría hacer que esto sea más útil.",
+            "Una idea sería combinar diferentes métodos para obtener mejores resultados.", "Considera la posibilidad de incluir una sección de preguntas frecuentes para aclarar dudas comunes.", "Incorporar opiniones de expertos puede darle más credibilidad.",
+            "Para optimizar esto, asegúrate de revisar las métricas y ajustar según los resultados.", "Añadir un resumen al final puede ayudar a consolidar la información.", "Probar diferentes estrategias y ver cuál funciona mejor puede ser una buena idea.",
+            "Incluir gráficos o visualizaciones puede hacer que los datos sean más comprensibles.", "Considera hacer una revisión periódica para mantener la relevancia.", "Una forma de complementar esto es solicitar retroalimentación y ajustar en consecuencia.",
+            "Explorar alternativas y comparar resultados puede ofrecer nuevas perspectivas.", "Puedes añadir una sección de recursos adicionales para los interesados en profundizar más.", "Considera la posibilidad de realizar encuestas para obtener opiniones directas.",
+            "Actualizar regularmente la información puede asegurar que esté siempre al día.", "Explorar casos de estudio relacionados puede proporcionar insights valiosos.", "Asegúrate de incluir ejemplos de aplicaciones prácticas para hacer el contenido más relevante.",
+            "Agregar una sección de conclusiones o recomendaciones puede ser útil."
+        ]
+    },
+    "consejo": {
+        "entradas": [
+            "dame un buen consejo", "¿tienes algún consejo?", "recomiéndame algo", "¿qué harías en mi lugar?", "dame una recomendación",
+            "¿qué me sugieres hacer?", "necesito un consejo", "¿cómo debería proceder?", "¿algún consejo para esto?", "¿qué me aconsejas?",
+            "¿qué debería considerar?", "¿qué opinas sobre esto?", "dame una recomendación para mejorar", "¿algún consejo útil?",
+            "¿cómo puedo manejar esto mejor?", "necesito una recomendación", "¿qué deberías hacer en mi situación?", "dame un consejo útil",
+            "¿qué harías si estuvieras en mi lugar?", "¿qué sugerencias tienes para esto?"
+        ],
+        "respuestas": [
+            "A veces, es útil tomar un paso atrás y evaluar la situación desde una perspectiva diferente.", "Mantén la calma y evalúa tus opciones antes de tomar una decisión.", "Considera buscar la opinión de alguien con experiencia en el área.",
+            "Siempre es bueno hacer una lista de pros y contras para tomar una decisión informada.", "Hablar con alguien de confianza puede ofrecerte nuevas perspectivas y consejos.", "Haz una investigación exhaustiva antes de tomar una decisión importante.",
+            "La planificación y la organización pueden ayudarte a manejar mejor cualquier desafío.", "A veces, el mejor consejo es escuchar a tu intuición y tomar decisiones basadas en lo que sientes que es correcto.",
+            "Tómate un tiempo para reflexionar sobre tus metas y cómo cada decisión te acerca a ellas.", "Considera las consecuencias a largo plazo de tus decisiones para tomar decisiones más informadas.",
+            "Buscar feedback de personas con experiencia puede ser muy valioso.", "Haz un plan de acción detallado para abordar cualquier problema de manera efectiva.", "Aprender de tus errores y éxitos pasados puede ofrecerte valiosas lecciones para el futuro.",
+            "La paciencia y la perseverancia son clave en cualquier proceso de toma de decisiones.", "Mantén una actitud positiva y abierta a nuevas ideas y enfoques.", "No tengas miedo de pedir ayuda o asesoría cuando la necesites.",
+            "Asegúrate de estar bien informado antes de tomar decisiones importantes."
+        ]
+    },
+    "adivinanza": {
+        "entradas": [
+            "dame una adivinanza", "¿tienes alguna adivinanza?", "cuéntame una adivinanza", "¿qué adivinanza tienes para mí?", "dame un enigma",
+            "¿puedes contarme una adivinanza?", "¿qué adivinanza me puedes dar?", "recomiéndame una adivinanza", "¿qué adivinanza conoces?",
+            "¿puedes hacerme una adivinanza?", "dime una adivinanza interesante", "¿tienes alguna adivinanza difícil?", "cuéntame un enigma",
+            "dame un acertijo", "¿qué adivinanza tienes en mente?", "¿puedes retarme con una adivinanza?", "cuéntame un acertijo interesante",
+            "dime una adivinanza para resolver", "dame una adivinanza que me haga pensar", "¿tienes algún enigma interesante?"
+        ],
+        "respuestas": [
+            "Aquí tienes una adivinanza: 'Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.' Respuesta: La pera.", 
+            "Te dejo con este enigma: 'Cuanto más quitas, más grande se vuelve. ¿Qué es?' Respuesta: Un agujero.",
+            "Adivina esto: 'No es un ser, pero tiene vida. No respira, pero está vivo. ¿Qué es?' Respuesta: Una planta.",
+            "Aquí va una adivinanza: 'Vuela sin alas, llora sin ojos. ¿Qué es?' Respuesta: La nube.",
+            "Prueba con esta adivinanza: 'Tiene agujas pero no pincha, tiene números pero no cuenta.' Respuesta: El reloj.",
+            "Intenta resolver esto: 'Siempre está delante de ti, pero nunca lo puedes alcanzar. ¿Qué es?' Respuesta: El futuro.",
+            "Adivina esto: 'Cuanto más le quitas, más grande se vuelve. ¿Qué es?' Respuesta: Un agujero.",
+            "Aquí tienes un enigma: 'No tengo boca, pero hablo. No tengo cuerpo, pero tengo vida. ¿Qué soy?' Respuesta: Un eco.",
+            "Intenta esta adivinanza: 'Tiene corona y no es rey, tiene campanas y no es iglesia. ¿Qué es?' Respuesta: La piña.",
+            "Adivina esto: 'Cuanto más quitas, más grande se vuelve. ¿Qué es?' Respuesta: Un agujero.",
+            "Prueba con esta: 'No tiene cabeza, pero tiene ojos. No tiene cuerpo, pero puede moverse. ¿Qué es?' Respuesta: La aguja.",
+            "Aquí tienes una adivinanza: 'No tiene boca, pero puede hablar; no tiene cuerpo, pero está en todos lados. ¿Qué es?' Respuesta: El eco.",
+            "Resuelve esto: 'Tiene hojas, pero no es árbol; tiene dientes, pero no muerde. ¿Qué es?' Respuesta: El libro.",
+            "Adivina esto: 'Siempre está delante de ti, pero nunca puedes alcanzarlo. ¿Qué es?' Respuesta: El futuro.",
+            "Aquí va una adivinanza: 'Es grande cuando es joven, y se hace pequeño cuando es viejo. ¿Qué es?' Respuesta: La vela."
+        ]
+    },
+    "curiosidad_tecnológica": {
+        "entradas": [
+            "cuéntame una curiosidad tecnológica", "¿qué sabes sobre tecnología?", "dame un dato curioso de tecnología", "¿tienes alguna curiosidad tecnológica?",
+            "¿qué novedades hay en tecnología?", "cuéntame algo interesante de tecnología", "¿algún dato curioso sobre tecnología?", "¿qué hay de nuevo en tecnología?",
+            "¿puedes contarme algo interesante sobre tecnología?", "¿qué tecnología está marcando la pauta?", "dime algo sorprendente sobre tecnología",
+            "¿qué avances tecnológicos recientes te sorprenden?", "¿qué dato curioso conoces sobre tecnología?", "cuéntame algo sobre el mundo tecnológico",
+            "¿alguna curiosidad sobre la historia de la tecnología?", "¿qué innovaciones recientes te llaman la atención?", "¿qué tecnología está en auge?",
+            "dime algo interesante sobre el futuro tecnológico", "¿algún dato curioso sobre la evolución tecnológica?", "¿qué tendencia tecnológica está emergiendo?"
+        ],
+        "respuestas": [
+            "Sabías que la primera webcam fue inventada para monitorear una cafetera? Los investigadores querían evitar perder tiempo esperando el café.",
+            "¿Sabías que el primer mensaje enviado por Internet fue 'LO'? El objetivo era enviar la palabra 'LOGIN', pero el sistema colapsó a mitad del envío.",
+            "Un dato interesante es que el primer disco duro de IBM de 1956 pesaba más de 1 tonelada y tenía una capacidad de almacenamiento de solo 5 MB.",
+            "La tecnología GPS fue inicialmente desarrollada por el Departamento de Defensa de los Estados Unidos para aplicaciones militares, pero ahora es ampliamente utilizado en la vida diaria.",
+            "¿Sabías que el primer correo electrónico se envió en 1971 por Ray Tomlinson? El mensaje era simplemente 'QWERTYUIOP'.",
+            "El primer videojuego de la historia, 'Tennis for Two', fue creado en 1958 y se jugaba en un osciloscopio.",
+            "El primer teléfono móvil fue inventado en 1973 por Martin Cooper de Motorola. El dispositivo pesaba alrededor de 2.5 kg y tenía una duración de batería de solo 30 minutos.",
+            "La tecnología de los pantallas táctiles que usamos hoy en día se basa en la tecnología capacitiva, que fue desarrollada en 1965 por E.A. Johnson.",
+            "Un dato curioso es que el término 'hacker' inicialmente se refería a alguien que hacía modificaciones en sistemas informáticos para mejorar su rendimiento, no a delincuentes.",
+            "La primera impresora 3D fue inventada en 1983 por Chuck Hull, quien también acuñó el término 'estereolitografía'."
+        ]
+    },
+    "frases_cine": {
+        "entradas": [
+            "dame una frase de película", "¿cuál es tu cita de cine favorita?", "dime una frase célebre de una película", "cuéntame una línea famosa de cine",
+            "¿qué frase memorable de cine conoces?", "dame una cita de película", "¿tienes alguna línea icónica de cine?", "¿qué frase de película te gusta?",
+            "dime una frase de una película famosa", "¿cuál es una cita célebre de cine?", "¿tienes alguna frase memorable de un filme?", "cuéntame una cita famosa de cine",
+            "dame una línea de una película clásica", "¿qué frase de película siempre recuerdas?", "dime una línea famosa de una película", "¿tienes alguna frase icónica de cine?",
+            "cuéntame una línea memorable de película", "¿cuál es tu cita de película favorita?", "dame una frase de una película popular", "¿qué línea de película te impresiona?"
+        ],
+        "respuestas": [
+            "Una famosa frase es: 'Que la Fuerza te acompañe.' - 'Star Wars'.", "Recuerda esta línea: 'Lo que hacemos en la vida tiene su eco en la eternidad.' - 'Gladiador'.",
+            "Una célebre cita es: 'La vida es como una caja de bombones, nunca sabes lo que te va a tocar.' - 'Forrest Gump'.", "No te olvides de esta línea: 'Soy el rey del mundo.' - 'Titanic'.",
+            "Una línea icónica es: 'Hasta la vista, baby.' - 'Terminator 2'.", "Otra frase memorable es: 'Volveré.' - 'Terminator'.", "Recuerda esta cita: 'No hay lugar como el hogar.' - 'El Mago de Oz'.",
+            "Una famosa línea es: 'La verdad es que no estoy aquí por mí mismo, sino por mi mamá.' - 'El Padrino'.", "Una gran cita es: 'E.T. teléfono en casa.' - 'E.T. el Extraterrestre'.",
+            "Una línea clásica es: 'Que el viento esté siempre a tu favor.' - 'Los Juegos del Hambre'.", "Otra frase memorable es: 'Hay algo en la forma en que caminas que me hace creer que no puedo quedarme sin ti.' - 'Casablanca'.",
+            "Una frase icónica es: 'No tienes que ser loco para trabajar aquí, pero ayuda.' - 'A Few Good Men'.", "Recuerda esta línea: 'Houston, tenemos un problema.' - 'Apollo 13'.", "Una famosa cita es: 'La vida no se mide por las veces que respiras, sino por los momentos que te quitan el aliento.' - 'Hitch'.",
+            "Una gran línea es: 'Nunca dejes de luchar por lo que quieres.' - 'Rocky'."
+        ]
+    },
+    "hechos_historia": {
+        "entradas": [
+            "cuéntame un hecho histórico", "¿qué dato histórico interesante conoces?", "dime un evento importante de la historia", "¿algún hecho histórico interesante?",
+            "dame un dato curioso sobre historia", "¿qué evento histórico es notable?", "cuéntame algo sobre la historia", "¿tienes algún dato histórico sorprendente?",
+            "dime un hecho importante de la historia", "¿qué evento histórico es memorable?", "cuéntame algo sobre la historia mundial", "¿algún hecho interesante de la historia?",
+            "dame un dato curioso sobre algún evento histórico", "¿qué evento histórico es relevante?", "dime un hecho importante que deba conocer", "¿qué sabes sobre la historia mundial?",
+            "cuéntame un hecho histórico relevante", "dame un dato sorprendente de la historia", "¿algún evento histórico que me sorprenda?"
+        ],
+        "respuestas": [
+            "El Imperio Romano fue uno de los más grandes y duraderos de la historia, abarcando tres continentes y durando más de 500 años.", "La Gran Muralla China, una de las maravillas del mundo, fue construida durante varias dinastías y se extiende por más de 13,000 millas.",
+            "En 1969, Neil Armstrong y Buzz Aldrin se convirtieron en los primeros humanos en caminar sobre la Luna durante la misión Apollo 11.", "La Revolución Francesa, que comenzó en 1789, fue un período crucial que llevó al derrocamiento de la monarquía y al establecimiento de la República Francesa.",
+            "La caída del Muro de Berlín en 1989 marcó el fin de la Guerra Fría y la reunificación de Alemania.", "La civilización egipcia es conocida por sus impresionantes estructuras como las pirámides de Giza, que fueron construidas hace más de 4,000 años.",
+            "El descubrimiento de América en 1492 por Cristóbal Colón abrió el continente americano a la exploración y colonización europea.", "En 1215, el rey Juan de Inglaterra firmó la Carta Magna, un documento clave en la historia que limitó los poderes del monarca y sentó las bases para los derechos constitucionales.",
+            "La Segunda Guerra Mundial, que comenzó en 1939 y terminó en 1945, fue el conflicto más devastador de la historia moderna, involucrando a la mayoría de las naciones del mundo.", "La Revolución Industrial, que comenzó en el siglo XVIII, transformó la producción y la tecnología, dando lugar a un rápido desarrollo económico y social.",
+            "La antigua Grecia es conocida por ser la cuna de la democracia y la filosofía, con figuras como Sócrates, Platón y Aristóteles influyendo en el pensamiento occidental.", "En 1914, el asesinato del archiduque Francisco Fernando de Austria desencadenó la Primera Guerra Mundial, un conflicto que cambiaría el curso de la historia global.",
+            "El Imperio Inca, ubicado en lo que hoy es Perú, fue una de las civilizaciones más avanzadas de América del Sur antes de la llegada de los europeos.", "La invención de la imprenta por Johannes Gutenberg en el siglo XV revolucionó la difusión del conocimiento y la cultura."
+        ]
+    },
+    "frases_inspiradoras": {
+        "entradas": [
+            "dame una frase inspiradora", "¿tienes alguna cita inspiradora?", "cuéntame una frase motivadora", "¿qué frase te inspira?", "dame una línea inspiradora",
+            "¿alguna cita que me motive?", "¿qué frase te motiva?", "dime una frase que me haga sentir bien", "dame una frase que inspire", "¿tienes alguna línea que inspire?",
+            "¿qué frase te ayuda a seguir adelante?", "dime una cita que me motive", "¿tienes alguna frase que me anime?", "dame una cita que me impulse",
+            "¿qué frase te inspira para alcanzar tus metas?", "dame una línea que me motive", "cuéntame una frase que me haga seguir adelante", "¿tienes alguna cita para levantar el ánimo?",
+            "dime una frase que me impulse a seguir adelante", "dame una cita inspiradora para enfrentar desafíos"
+        ],
+        "respuestas": [
+            "Aquí tienes una frase inspiradora: 'El único modo de hacer un gran trabajo es amar lo que haces.' - Steve Jobs.", "Recuerda: 'No importa cuántas veces fracases, lo importante es levantarte y seguir adelante.' - Nelson Mandela.",
+            "Una cita inspiradora es: 'No esperes. Nunca será el momento adecuado.' - Napoleon Hill.", "Aquí va una frase motivadora: 'El éxito es la suma de pequeños esfuerzos repetidos día tras día.' - Robert Collier.",
+            "Una frase para inspirarte: 'Lo que no te mata te hace más fuerte.' - Friedrich Nietzsche.", "Recuerda: 'La única limitación de nuestro mañana es la duda que tengamos hoy.' - Franklin D. Roosevelt.",
+            "Una línea inspiradora es: 'No te rindas, a veces la última llave es la que abre la puerta.'", "Aquí tienes una cita: 'La vida es 10% lo que te ocurre y 90% cómo reaccionas a ello.' - Charles R. Swindoll.",
+            "Una frase motivadora es: 'El éxito no es el final, el fracaso no es fatal: lo que cuenta es el coraje para continuar.' - Winston Churchill.", "Recuerda: 'El único límite a nuestros logros de mañana es nuestra duda de hoy.' - Franklin D. Roosevelt.",
+            "Aquí va una frase inspiradora: 'Tu vida es hoy, no mañana. Aprovecha cada momento.'", "Una cita que te motive: 'Cree en ti mismo y todo será posible.' - Anónimo.", "Recuerda: 'No importa lo lento que avances, siempre y cuando no te detengas.' - Confucio.",
+            "Aquí tienes una frase para impulsar tu espíritu: 'No cuentes los días, haz que los días cuenten.' - Muhammad Ali.", "Una línea inspiradora: 'La vida es un desafío, enfréntalo; la vida es una aventura, atrévete.' - Madre Teresa de Calcuta."
+        ]
+    },
+    "recomendaciones_libros": {
+        "entradas": ["recomiéndame un libro", "quiero leer algo nuevo", "qué libro debería leer", "sugiere un libro", "me recomiendas un libro", "qué libro es bueno"],
+        "respuestas": [
+            "Te recomiendo 'Cien años de soledad' de Gabriel García Márquez, es una obra maestra de la literatura.",
+            "¿Qué tal '1984' de George Orwell? Es una novela distópica muy impactante.",
+            "Si disfrutas de la fantasía, 'Harry Potter y la piedra filosofal' de J.K. Rowling es un clásico.",
+            "Para algo más contemporáneo, prueba 'La chica del tren' de Paula Hawkins.",
+            "Si te interesan los misterios, 'El nombre de la rosa' de Umberto Eco es una excelente elección.",
+            "Para un enfoque más filosófico, 'El alquimista' de Paulo Coelho es una buena opción.",
+            "¿Qué te parece 'Orgullo y prejuicio' de Jane Austen? Es una novela clásica con gran profundidad.",
+            "Si buscas una novela de ciencia ficción, 'Dune' de Frank Herbert es imprescindible."
+        ]
+    },
+    "consejos_vida": {
+        "entradas": ["dame un consejo de vida", "qué consejos me das", "quiero saber algún consejo", "sugiere un consejo de vida", "qué me recomiendas para la vida"],
+        "respuestas": [
+            "No te compares con los demás; cada persona tiene su propio camino.",
+            "La gratitud puede transformar tu vida. Agradece las cosas pequeñas.",
+            "El equilibrio entre trabajo y vida personal es crucial para tu bienestar.",
+            "Aprende a decir no cuando sea necesario; proteger tu tiempo es importante.",
+            "La comunicación abierta y honesta puede resolver muchos problemas.",
+            "Establece metas claras y trabaja de manera constante hacia ellas.",
+            "La resiliencia es clave; aprende a adaptarte a los cambios y desafíos.",
+            "Rodéate de personas que te inspiren y te apoyen en tus objetivos."
+        ]
+    },
+    "sabias_que": {
+        "entradas": ["sabías que", "dime algo interesante", "cuéntame un dato interesante", "quiero saber algo sorprendente"],
+        "respuestas": [
+            "¿Sabías que el corazón de un camarón está en su cabeza?",
+            "Un dato curioso: El rayo de una tormenta puede calentar el aire a más de 30,000 grados Celsius.",
+            "¿Sabías que los pulpos tienen tres corazones?",
+            "Los flamencos rosados obtienen su color de los carotenoides en su dieta.",
+            "¿Sabías que las medusas han existido por más de 500 millones de años?",
+            "El récord mundial de la mayor cantidad de agujeros en una hoja de papel es de 1,000,000.",
+            "¿Sabías que los caballos tienen un rango de visión de casi 360 grados?",
+            "El helado fue inventado en China hace más de 2,000 años."
+        ]
+    },
+    "eventos_actualidad": {
+        "entradas": ["qué está pasando en el mundo", "cuéntame de las noticias recientes", "qué eventos actuales son importantes", "dime algo de actualidad"],
+        "respuestas": [
+            "No tengo acceso a las noticias en tiempo real, pero te recomiendo revisar las principales fuentes de noticias para las últimas actualizaciones.",
+            "Para estar al tanto de eventos actuales, puedes seguir sitios web de noticias o aplicaciones de noticias.",
+            "Revisa las noticias en línea para conocer los eventos más recientes y relevantes.",
+            "Te sugiero que consultes tu fuente de noticias favorita para las actualizaciones más recientes.",
+            "Mantente informado sobre los eventos actuales a través de medios de comunicación confiables.",
+            "Para actualizaciones en tiempo real, las aplicaciones de noticias en tu teléfono son muy útiles.",
+            "Revisa las redes sociales para obtener las últimas noticias y eventos de interés.",
+            "Consulta periódicos en línea para estar al tanto de los acontecimientos recientes."
+        ]
+    },
+    "viajes": {
+        "entradas": ["dame recomendaciones de viaje", "dónde debería viajar", "sugiere un destino", "qué lugar debería visitar", "quiero ideas para viajar"],
+        "respuestas": [
+            "Te recomiendo visitar Kyoto, Japón, por su rica historia y hermosos templos.",
+            "¿Qué tal una visita a la Riviera Maya en México? Sus playas son increíbles.",
+            "Si buscas aventura, Nueva Zelanda ofrece paisajes impresionantes y actividades al aire libre.",
+            "Para una experiencia cultural, Barcelona, España, es una gran opción con su arquitectura y gastronomía.",
+            "Si prefieres algo más exótico, prueba Marruecos, conocido por sus mercados y desiertos.",
+            "¿Qué opinas de Islandia? Sus paisajes naturales y auroras boreales son únicos.",
+            "Para una experiencia relajante, las Islas Maldivas ofrecen playas paradisíacas y resorts de lujo.",
+            "Praga, República Checa, es un destino encantador con su arquitectura medieval y ambiente histórico."
+        ]
+    },
+    "tecnologia_nueva": {
+        "entradas": ["dime algo sobre tecnología nueva", "qué hay de nuevo en tecnología", "cuéntame sobre las últimas innovaciones tecnológicas", "quiero saber sobre tecnología reciente"],
+        "respuestas": [
+            "La inteligencia artificial está avanzando rápidamente, con nuevas aplicaciones en salud, finanzas y educación.",
+            "Los dispositivos de realidad aumentada están ganando popularidad y se utilizan en diversos campos, desde el entretenimiento hasta la educación.",
+            "Los coches autónomos están cada vez más cerca de ser una realidad común en nuestras carreteras.",
+            "La tecnología de 5G está empezando a desplegarse globalmente, ofreciendo velocidades de internet mucho más rápidas.",
+            "Las innovaciones en tecnología de baterías están mejorando la duración y eficiencia de los dispositivos electrónicos.",
+            "La computación cuántica está en desarrollo y promete revolucionar la forma en que procesamos información.",
+            "La impresión 3D está evolucionando y se está utilizando para crear desde prototipos hasta artículos de uso cotidiano.",
+            "Los avances en biotecnología están permitiendo nuevas técnicas en tratamientos médicos y la edición genética."
+        ]
+    },
+    "horario": {
+        "entradas": ["¿qué hora es?", "¿cuál es la hora?", "¿qué hora tienes?", "¿me puedes decir la hora?", "¿qué hora es ahora?"],
+        "respuestas": [
+            "Lo siento, no puedo decirte la hora. Por favor, consulta un reloj.",
+            "No tengo acceso a la hora actual, te recomiendo que mires en tu dispositivo.",
+            "No puedo proporcionarte la hora, pero puedes revisarla en tu teléfono o computadora.",
+            "Para saber la hora, por favor verifica en un reloj o en la pantalla de tu dispositivo."
+        ]
+    },
+    "ubicacion": {
+        "entradas": ["¿dónde estás?", "¿en qué lugar te encuentras?", "¿cuál es tu ubicación?", "¿dónde te encuentras?", "¿dónde estás ubicado?"],
+        "respuestas": [
+            "Soy un chatbot, no tengo una ubicación física.",
+            "No tengo una ubicación física, estoy aquí para asistirte en línea.",
+            "No tengo un lugar físico donde me encuentre, solo existo en el ciberespacio.",
+            "Como asistente virtual, no tengo una ubicación concreta."
+        ]
+    },
+    "horario_atencion": {
+        "entradas": ["¿cuál es tu horario de atención?", "¿a qué hora estás disponible?", "¿cuándo estás disponible?", "¿tienes horario de atención?", "¿cuándo puedo contactarte?"],
+        "respuestas": [
+            "Estoy disponible para ayudarte las 24 horas del día, los 7 días de la semana.",
+            "Puedes contactarme en cualquier momento, estoy aquí para asistirte siempre.",
+            "No tengo un horario específico, estoy disponible en cualquier momento que me necesites.",
+            "Estoy aquí todo el tiempo para ayudarte, no tengo un horario de atención definido."
+        ]
+    },
+    "error": {
+        "entradas": ["cometí un error", "me equivoqué", "esto no es correcto", "hay un problema", "algo salió mal"],
+        "respuestas": [
+            "No te preocupes, ¿en qué puedo ayudarte para solucionar el problema?",
+            "Entiendo, ¿puedes darme más detalles sobre el error para que pueda asistirte mejor?",
+            "Si cometiste un error, no dudes en decirme cómo puedo ayudarte a corregirlo.",
+            "Estoy aquí para ayudarte. ¿Puedes explicarme más sobre el problema que enfrentaste?"
+        ]
+    },
+    "informacion_empresa": {
+        "entradas": ["¿qué hace tu empresa?", "¿cuál es el objetivo de la empresa?", "dime sobre tu empresa", "¿qué servicios ofrece tu empresa?", "háblame de la empresa"],
+        "respuestas": [
+            "Somos una empresa dedicada al desarrollo de software.",
+            "Nuestra empresa se especializa en el desarrollo de software.",
+            "Ofrecemos desarrollo de aplicaciones de todo tipo.",
+            "En nuestra empresa nos enfocamos en solucionar los problemas de nuestros clientes con software."
+        ]
+    },
+    "informacion_contacto": {
+        "entradas": ["¿cómo te contacto?", "¿cuál es tu información de contacto?", "¿cómo puedo hablar contigo?", "dame tu contacto", "¿cómo te puedo encontrar?"],
+        "respuestas": [
+            "Para contactarme, simplemente envíame un mensaje aquí.",
+            "Puedes comunicarte conmigo a través de este chat.",
+            "Estoy disponible a través de este medio, solo envíame tu mensaje.",
+            "Para contactar conmigo, sigue usando este chat para tus preguntas."
+        ]
+    },
+    "tutoriales": {
+        "entradas": [
+            "¿Cómo configuro un servidor web?", "Configuración de un servidor web", "Configurar servidor web",
+            "¿Cómo crear una aplicación móvil?", "Tutorial para crear una app móvil", "Crear una aplicación móvil desde cero",
+            "¿Cómo usar Git para control de versiones?", "Guía para usar Git", "Cómo empezar con Git",
+            "¿Cómo instalar Linux en mi PC?", "Instalación de Linux", "Guía para instalar Linux en una computadora",
+            "¿Cómo crear una página web?", "Guía para crear una página web", "Crear página web desde cero"
+        ],
+        "respuestas": [
+            "Para configurar un servidor web, necesitas instalar un software como Apache o Nginx, configurar los archivos de configuración y asegurarte de que el firewall permita el tráfico HTTP/HTTPS.",
+            "Para crear una aplicación móvil, debes elegir un lenguaje de programación como Java o Swift, usar un IDE como Android Studio o Xcode, y seguir las guías oficiales para desarrollo de apps móviles.",
+            "Git es una herramienta poderosa para control de versiones. Comienza instalando Git, luego inicializa un repositorio con 'git init', y utiliza comandos como 'git add', 'git commit' y 'git push' para gestionar tu proyecto.",
+            "Para instalar Linux, descarga una distribución como Ubuntu, crea un USB booteable con una herramienta como Rufus, y sigue las instrucciones del instalador para particionar tu disco y configurar el sistema.",
+            "Crear una página web desde cero implica aprender HTML, CSS y JavaScript. Comienza estructurando tu página con HTML, estilízala con CSS, y añade interactividad con JavaScript."
+        ]
+    },
+    "noticias": {
+        "entradas": [
+            "¿Qué noticias hay hoy?", "Dime las últimas noticias", "Noticias recientes", 
+            "¿Qué está pasando en el mundo?", "Actualización de noticias", "Dame las noticias del día",
+            "¿Qué pasó en el mundo hoy?", "Últimas noticias", "Noticias actuales", 
+            "¿Cuáles son las noticias más recientes?", "Dime lo último en noticias", "Últimas novedades"
+        ],
+        "respuestas": [
+            "Hoy, varios países están debatiendo nuevas políticas energéticas para combatir el cambio climático.",
+            "En las últimas horas, se han reportado avances en la investigación de vacunas para enfermedades raras.",
+            "Los mercados financieros globales han mostrado volatilidad debido a las tensiones internacionales.",
+            "Un nuevo descubrimiento arqueológico en Egipto ha revelado una tumba antigua de gran importancia histórica.",
+            "La comunidad internacional sigue preocupada por los efectos del cambio climático en el Ártico."
+        ]
+    },
+    "tendencias": {
+        "entradas": [
+            "¿Cuáles son las últimas tendencias?", "Dime lo que está de moda", "Últimas tendencias en redes sociales", 
+            "¿Qué está en tendencia ahora?", "Tendencias recientes", "¿Qué es popular en este momento?", 
+            "Tendencias actuales", "¿Qué está de moda ahora?", "Dime las tendencias actuales", 
+            "¿Cuáles son las tendencias más recientes?", "¿Qué está siendo tendencia?", "Lo más popular hoy en día"
+        ],
+        "respuestas": [
+            "Las tendencias de moda están inclinándose hacia el uso de colores brillantes y sostenibles.",
+            "En redes sociales, los videos cortos y creativos continúan dominando las plataformas como TikTok e Instagram.",
+            "La inteligencia artificial sigue siendo un tema de gran interés, con nuevas aplicaciones desarrollándose rápidamente.",
+            "El veganismo está ganando popularidad, con más personas adoptando dietas basadas en plantas.",
+            "Los autos eléctricos son una de las tendencias más fuertes en la industria automotriz, con nuevas marcas lanzando modelos competitivos."
+        ]
+    },
+    "recetas": {
+        "entradas": [
+            "Dame una receta fácil", "¿Cómo hago una receta rápida?", "Recetas sencillas para cenar", 
+            "¿Tienes una receta para hoy?", "Receta para el almuerzo", "¿Cómo hago una comida rápida?", 
+            "Receta sencilla", "¿Qué puedo cocinar rápido?", "Dame una receta rápida", 
+            "Recetas para principiantes", "Dame una receta saludable", "¿Cómo preparo una cena rápida?"
+        ],
+        "respuestas": [
+            "Una receta rápida y fácil es la pasta aglio e olio: hierve pasta, saltea ajo en aceite de oliva, mezcla todo y añade perejil y queso parmesano.",
+            "Puedes preparar una ensalada de pollo a la parrilla: cocina el pollo, mezcla con vegetales frescos y adereza con aceite de oliva y vinagre balsámico.",
+            "Prueba hacer una tortilla de espinacas: bate huevos, añade espinacas frescas y un poco de queso, cocina en una sartén y sirve caliente.",
+            "Para un desayuno rápido, haz un batido de frutas: mezcla plátano, fresas, yogur y un poco de miel en una licuadora.",
+            "Un sándwich caprese es una opción rápida: tomate, mozzarella fresca, albahaca y un toque de aceite de oliva y vinagre balsámico en pan tostado."
+        ]
+    },
+    "tips_salud": {
+        "entradas": [
+            "Dame un consejo de salud", "¿Cómo puedo mejorar mi salud?", "Tips para estar saludable", 
+            "Consejos para una vida saludable", "¿Qué puedo hacer para estar más sano?", "Dime un tip de salud", 
+            "¿Cómo mejorar mi bienestar?", "Consejos de salud", "Dame un tip saludable", 
+            "¿Cómo cuidar mi salud?", "Tips para estar en forma", "Dame un consejo para estar saludable"
+        ],
+        "respuestas": [
+            "Para mejorar tu salud, intenta caminar al menos 30 minutos al día. Es una forma sencilla de mantenerte activo.",
+            "Bebe suficiente agua durante el día, al menos 8 vasos. Mantenerte hidratado es clave para el bienestar general.",
+            "Incluir más frutas y verduras en tu dieta diaria puede mejorar tu salud digestiva y aumentar tu ingesta de vitaminas.",
+            "Dormir entre 7 y 8 horas cada noche es esencial para mantener una buena salud mental y física.",
+            "Practica la meditación o la respiración profunda para reducir el estrés y mejorar tu bienestar emocional."
+        ]
+    },
+    "deportes": {
+        "entradas": [
+            "Dime algo de deportes", "¿Qué está pasando en el mundo del deporte?", "Últimas noticias de deportes", 
+            "¿Qué deportes están en tendencia?", "Dame la actualización deportiva", "¿Qué pasó en el fútbol hoy?", 
+            "Noticias deportivas", "¿Cuáles son los eventos deportivos más recientes?", "Últimos resultados deportivos", 
+            "Dame lo último en deportes", "¿Qué eventos deportivos son importantes?", "Dime lo más reciente en deportes"
+        ],
+        "respuestas": [
+            "Hoy, la selección nacional ganó su partido de clasificación para el mundial, asegurando su lugar en el torneo.",
+            "En la liga de fútbol, el equipo local ha sorprendido con una victoria inesperada contra el campeón defensor.",
+            "La NBA ha anunciado cambios importantes en las reglas para la próxima temporada.",
+            "Un atleta ha batido el récord mundial en la maratón, con un tiempo impresionante de menos de 2 horas.",
+            "Los Juegos Olímpicos están a la vuelta de la esquina, con todos los países preparando a sus mejores atletas."
+        ]
+    },
+    "finanzas": {
+        "entradas": [
+            "Dame un consejo financiero", "¿Cómo puedo ahorrar dinero?", "Tips para mejorar mis finanzas", 
+            "¿Cómo gestionar mis finanzas personales?", "Consejos para invertir", "¿Cómo puedo mejorar mi economía?", 
+            "Dime un tip financiero", "¿Cómo hacer un presupuesto?", "Consejos para ahorrar dinero", 
+            "¿Cómo mejorar mi salud financiera?", "Tips de ahorro", "Dame un consejo para invertir"
+        ],
+        "respuestas": [
+            "Una forma sencilla de ahorrar dinero es seguir la regla del 50/30/20: 50% para necesidades, 30% para deseos y 20% para ahorro.",
+            "Invierte en un fondo de emergencia que cubra al menos 3 a 6 meses de gastos. Es vital para imprevistos.",
+            "Crear un presupuesto mensual puede ayudarte a gestionar tus finanzas personales de manera más efectiva.",
+            "Evita deudas innecesarias. Si usas tarjetas de crédito, asegúrate de pagar el saldo completo cada mes.",
+            "Investiga sobre inversiones a largo plazo, como fondos indexados o bonos, que suelen ser más seguros."
+        ]
+    },
+    "educación": {
+        "entradas": [
+            "Dame un consejo para estudiar", "¿Cómo mejorar mis habilidades de estudio?", "Tips para ser un mejor estudiante", 
+            "¿Cómo puedo aprender más rápido?", "Consejos para estudiar mejor", "¿Cómo mejorar en la escuela?", 
+            "Dame un tip para estudiar", "¿Cómo ser más eficiente al estudiar?", "Consejos para el éxito académico", 
+            "¿Cómo puedo mejorar mis calificaciones?", "Tips para aprender más", "Dame un consejo académico"
+        ],
+        "respuestas": [
+            "Crear un horario de estudio regular y seguirlo te ayudará a mantenerte organizado y enfocado.",
+            "Tomar descansos regulares durante el estudio puede mejorar tu retención y mantenerte motivado.",
+            "Explicar lo que has aprendido a otra persona es una excelente manera de reforzar el conocimiento.",
+            "Usa técnicas como el subrayado y los mapas mentales para organizar mejor la información que estudias.",
+            "Establecer metas pequeñas y alcanzables para cada sesión de estudio puede mejorar tu productividad."
+        ]
+    },
+    "entretenimiento": {
+        "entradas": [
+            "¿Qué hay de nuevo en entretenimiento?", "Dime algo sobre las últimas películas", "Actualización de entretenimiento", 
+            "¿Qué series están de moda?", "Últimas tendencias en películas", "Dame una recomendación de serie", 
+            "Noticias de entretenimiento", "¿Qué está pasando en el mundo del cine?", "Dame lo último en entretenimiento", 
+            "¿Qué está de moda en la música?", "Tendencias de entretenimiento", "Dime algo sobre las últimas series"
+        ],
+        "respuestas": [
+            "La última película de superhéroes ha batido récords de taquilla en su primer fin de semana.",
+            "Una nueva serie en Netflix está siendo tendencia por su trama intrigante y personajes complejos.",
+            "El festival de cine de Cannes ha premiado a una película independiente que ha sorprendido a la crítica.",
+            "Una banda de rock clásica ha anunciado una gira mundial, emocionando a sus fans de toda la vida.",
+            "Una comedia romántica ha ganado popularidad por su enfoque fresco y divertido de las relaciones modernas."
+        ]
+    },
+    "trivia": {
+        "entradas": [
+            "Dame una trivia", "¿Tienes alguna trivia interesante?", "Dime un dato curioso", 
+            "Trivia interesante", "Dame una pregunta de trivia", "Dime un dato sorprendente", 
+            "Dame un hecho interesante", "¿Sabes algún dato curioso?", "Dame una trivia sorprendente", 
+            "Trivia de cultura general", "¿Tienes alguna pregunta de trivia?", "Dame una trivia curiosa"
+        ],
+        "respuestas": [
+            "¿Sabías que los tiburones son los únicos peces que pueden parpadear con ambos ojos?",
+            "El punto más profundo del océano se encuentra en la Fosa de las Marianas y se llama Challenger Deep.",
+            "Los delfines tienen nombres propios y pueden reconocerse entre sí por estos sonidos únicos.",
+            "La Gran Muralla China es la estructura más larga jamás construida por el ser humano, con más de 13,000 millas de longitud.",
+            "La miel nunca se estropea; se han encontrado frascos de miel en tumbas egipcias que aún son comestibles después de miles de años."
+        ]
+    },
+    "arte": {
+        "entradas": [
+            "háblame de arte", "cuéntame algo sobre pintura", "¿qué sabes de escultura?", "dime algo sobre arte moderno",
+            "¿alguna obra de arte famosa?", "háblame de algún artista reconocido", "cuéntame sobre movimientos artísticos", "¿algún dato sobre arte?",
+            "dame un hecho interesante sobre el arte", "¿qué obra de arte debería conocer?", "cuéntame algo sobre arte clásico", "¿qué es el arte contemporáneo?"
+        ],
+        "respuestas": [
+            "La Mona Lisa, pintada por Leonardo da Vinci, es una de las obras de arte más famosas y enigmáticas del mundo.",
+            "El Guernica de Pablo Picasso es una poderosa representación del horror de la guerra y un símbolo del sufrimiento humano.",
+            "El Renacimiento fue un período de gran florecimiento artístico en Europa, destacando artistas como Miguel Ángel, Leonardo da Vinci y Rafael.",
+            "El impresionismo, liderado por artistas como Claude Monet y Pierre-Auguste Renoir, revolucionó el arte con su enfoque en la luz y el color.",
+            "La Capilla Sixtina, pintada por Miguel Ángel, es una de las obras maestras del arte renacentista.",
+            "Salvador Dalí fue un destacado pintor surrealista conocido por sus obras oníricas y surrealistas como 'La persistencia de la memoria'.",
+            "El arte abstracto, popularizado por artistas como Wassily Kandinsky, se enfoca en formas y colores en lugar de representar la realidad de manera literal."
+        ]
+    },
+    "ciencia": {
+        "entradas": [
+            "cuéntame un dato científico", "¿qué descubrimiento científico es importante?", "dime algo sobre física", "háblame de un científico famoso",
+            "¿algún avance en biología?", "dame un hecho interesante sobre química", "cuéntame algo sobre astronomía", "¿algún dato sobre la ciencia?",
+            "dame un dato curioso sobre la ciencia", "¿qué descubrimiento científico es notable?", "cuéntame algo sobre la evolución", "¿algún avance en medicina?"
+        ],
+        "respuestas": [
+            "Albert Einstein desarrolló la teoría de la relatividad, que revolucionó nuestra comprensión del espacio y el tiempo.",
+            "La estructura del ADN fue descubierta en 1953 por James Watson y Francis Crick, sentando las bases para la genética moderna.",
+            "Marie Curie fue la primera mujer en ganar un Premio Nobel, y la única persona en ganarlo en dos campos diferentes: Física y Química.",
+            "La teoría del Big Bang propone que el universo comenzó con una gran explosión hace aproximadamente 13.8 mil millones de años.",
+            "Isaac Newton formuló las leyes del movimiento y la gravitación universal, fundamentales para la física clásica.",
+            "El descubrimiento de los antibióticos, como la penicilina por Alexander Fleming, revolucionó la medicina y salvó innumerables vidas.",
+            "Charles Darwin propuso la teoría de la evolución por selección natural, cambiando para siempre nuestra comprensión de la vida en la Tierra."
+        ]
+    },
+    "literatura": {
+        "entradas": [
+            "cuéntame algo sobre literatura", "¿qué libro famoso recomiendas?", "dime algo sobre un autor famoso", "háblame de un clásico literario",
+            "¿alguna novela que deba leer?", "dame un dato interesante sobre literatura", "cuéntame sobre poesía", "¿algún dato sobre la literatura?",
+            "dame un dato curioso sobre un libro", "¿qué autor es conocido?", "cuéntame algo sobre literatura clásica", "¿alguna obra literaria importante?"
+        ],
+        "respuestas": [
+            "Don Quijote de la Mancha, escrito por Miguel de Cervantes, es considerada una de las obras más importantes de la literatura universal.",
+            "William Shakespeare es uno de los dramaturgos más influyentes de la historia, conocido por obras como Hamlet, Macbeth y Romeo y Julieta.",
+            "Moby-Dick, escrita por Herman Melville, es una novela icónica que explora temas de obsesión, venganza y naturaleza.",
+            "La Odisea, atribuida a Homero, es un poema épico que narra las aventuras de Odiseo en su viaje de regreso a casa después de la guerra de Troya.",
+            "Fiódor Dostoievski es conocido por sus profundas exploraciones psicológicas en novelas como Crimen y castigo y Los hermanos Karamazov.",
+            "La Divina Comedia, escrita por Dante Alighieri, es una obra maestra de la literatura medieval que describe el viaje del alma a través del Infierno, el Purgatorio y el Paraíso.",
+            "Jane Austen, autora de Orgullo y prejuicio, es conocida por sus incisivas observaciones sobre la sociedad inglesa del siglo XIX."
+        ]
+    },
+    "historia_local": {
+        "entradas": [
+            "cuéntame sobre la historia local", "dime algo de la historia de mi ciudad", "háblame de un evento importante localmente", "¿qué hecho histórico ocurrió aquí?",
+            "dame un dato interesante sobre la historia local", "cuéntame algo sobre la historia de mi región", "¿algún evento local significativo?", "dame un dato curioso sobre la historia de esta área",
+            "¿qué personaje histórico es importante aquí?", "cuéntame algo sobre un lugar histórico local", "¿algún hecho interesante de la historia local?"
+        ],
+        "respuestas": [
+            "En la década de 1800, esta ciudad fue un importante centro de comercio gracias a su ubicación estratégica.",
+            "El edificio histórico del ayuntamiento fue construido a principios del siglo XX y ha sido testigo de numerosos eventos importantes.",
+            "Durante la independencia, esta región jugó un papel crucial como punto de encuentro para los líderes revolucionarios.",
+            "El parque central fue inaugurado en 1901 y es uno de los lugares más emblemáticos de la ciudad.",
+            "En el siglo XIX, la economía local prosperó gracias a la industria minera, que atrajo a trabajadores de todo el país.",
+            "El puente histórico que cruza el río fue construido en 1890 y es un símbolo de la conexión entre las dos partes de la ciudad.",
+            "El festival anual que se celebra aquí tiene sus raíces en una antigua tradición local que data de hace más de 200 años."
+        ]
+    },
+    "eventos": {
+        "entradas": [
+            "cuéntame sobre un evento próximo", "¿qué evento importante está por suceder?", "dime algo sobre festivales locales", "háblame de eventos culturales",
+            "¿algún concierto interesante?", "dame un dato sobre eventos de la ciudad", "cuéntame algo sobre exposiciones actuales", "¿algún evento deportivo próximo?",
+            "dame un dato curioso sobre eventos próximos", "¿qué evento es popular este mes?", "cuéntame algo sobre eventos sociales", "¿alguna feria o exposición importante?"
+        ],
+        "respuestas": [
+            "Este fin de semana se celebrará el festival anual de música, que atraerá a miles de personas de todo el país.",
+            "La exposición de arte contemporáneo que se inaugurará la próxima semana contará con obras de artistas locales e internacionales.",
+            "El próximo mes, la ciudad será sede de una conferencia sobre innovación tecnológica con la participación de destacados expertos.",
+            "El concierto de la banda local en el parque central es uno de los eventos más esperados del verano.",
+            "La maratón anual de la ciudad se llevará a cabo el próximo domingo, atrayendo a corredores de todo el país.",
+            "La feria gastronómica que se celebra cada año es una excelente oportunidad para probar platos tradicionales de la región.",
+            "El desfile de moda que se realizará el próximo mes es uno de los eventos más glamorosos del año."
+        ]
+    },
+    "ofertas": {
+        "entradas": [
+            "¿qué ofertas están disponibles?", "dime algo sobre descuentos actuales", "háblame de promociones recientes", "¿algún dato sobre ventas especiales?",
+            "dame un dato interesante sobre ofertas", "cuéntame algo sobre rebajas actuales", "¿alguna oferta interesante?", "dame un dato curioso sobre promociones",
+            "¿qué promociones hay en tiendas?", "cuéntame algo sobre ofertas especiales", "¿alguna rebaja notable?", "¿qué descuento es atractivo este mes?"
+        ],
+        "respuestas": [
+            "Esta semana, la tienda de electrónica está ofreciendo un 20% de descuento en todos los productos.",
+            "El supermercado local tiene una promoción de 'compra uno y llévate otro gratis' en una selección de productos.",
+            "La librería del centro está ofreciendo un 30% de descuento en todos los libros durante todo el mes.",
+            "La tienda de ropa está liquidando su stock de verano con descuentos de hasta el 50%.",
+            "El restaurante en la esquina está ofreciendo un menú especial con un 25% de descuento para cenas en pareja.",
+            "El centro comercial tiene una promoción en la que puedes ganar cupones de descuento por cada compra superior a $50.",
+            "El cine local tiene entradas a mitad de precio los miércoles para todas las funciones."
+        ]
+    },
+    "opiniones": {
+        "entradas": [
+            "¿cuál es tu opinión sobre este tema?", "dame tu punto de vista", "cuéntame tu opinión sobre esto", "¿qué piensas al respecto a esta película?", "dime tu opinión sobre un tema actual", "¿qué opinas de este libro?", "dame tu perspectiva sobre este asunto",
+            "cuéntame tu opinión sobre las redes sociales", "¿qué piensas sobre el cambio climático?", "dame tu opinión sobre la tecnología moderna",
+            "¿qué opinas de las últimas noticias?", "cuéntame tu punto de vista sobre la educación", "¿qué piensas sobre la cultura popular?",
+            "dame tu opinión sobre la música actual", "¿qué opinas de los avances científicos recientes?"
+        ],
+        "respuestas": [
+            "Creo que las redes sociales han transformado la manera en que nos comunicamos, pero también han planteado retos en cuanto a la privacidad y la salud mental.",
+            "En mi opinión, la tecnología moderna ha traído grandes beneficios, pero también nos enfrenta a nuevos desafíos, como la adicción digital y la automatización laboral.",
+            "Considero que la educación es fundamental para el desarrollo de la sociedad, y debemos seguir innovando para adaptarla a los tiempos modernos.",
+            "Respecto al cambio climático, es un problema urgente que requiere acción inmediata por parte de todos, desde los individuos hasta los gobiernos.",
+            "La cultura popular refleja las tendencias y valores de la sociedad, y aunque a veces puede parecer superficial, también es una forma poderosa de expresión.",
+            "Los avances científicos recientes, como la inteligencia artificial y la biotecnología, son emocionantes pero también plantean cuestiones éticas que debemos considerar.",
+            "Pienso que la música actual es diversa y vibrante, con una mezcla de géneros y estilos que refleja la globalización y el intercambio cultural."
+        ]
+    },
+    "recomendaciones_peliculas": {
+        "entradas": [
+            "¿qué película me recomiendas?", "dime una buena película para ver", "cuéntame sobre una película interesante", "¿alguna película que deba ver?",
+            "dame una recomendación de cine", "¿qué película está buena?", "sugiéreme una película para el fin de semana", "¿qué película te gusta?",
+            "cuéntame sobre un buen filme", "¿alguna película recomendada?", "dame un título de cine para ver", "¿qué película me recomendarías?"
+        ],
+        "respuestas": [
+            "Te recomiendo ver 'El Padrino', una de las mejores películas de todos los tiempos con actuaciones y una historia inolvidables.",
+            "Si te gustan los thrillers, 'Seven' es una película intensa y bien elaborada que te mantendrá en el borde de tu asiento.",
+            "Para algo más ligero, 'La La Land' es un hermoso musical moderno que celebra el amor y el arte.",
+            "Si te interesa la ciencia ficción, 'Blade Runner 2049' es visualmente impresionante y ofrece una reflexión profunda sobre la humanidad.",
+            "Para una experiencia conmovedora, 'El viaje de Chihiro' es una película animada japonesa que es tanto mágica como profunda.",
+            "Si prefieres las comedias, 'Superbad' es una de las películas más divertidas y sinceras sobre la amistad adolescente.",
+            "Para los amantes del drama, 'Forrest Gump' es una película emotiva que sigue la extraordinaria vida de un hombre con una gran historia que contar."
+        ]
+    },
+    "recomendaciones_musica": {
+        "entradas": [
+            "¿qué música me recomiendas?", "dame una canción para escuchar", "cuéntame sobre un buen álbum", "¿algún artista que deba escuchar?",
+            "dame una recomendación musical", "¿qué banda está buena?", "sugiéreme una canción para el día", "¿qué música te gusta?",
+            "cuéntame sobre una buena banda", "¿alguna canción recomendada?", "dame un álbum para escuchar", "¿qué música me recomendarías?"
+        ],
+        "respuestas": [
+            "Te recomiendo escuchar el álbum 'Abbey Road' de The Beatles, es un clásico atemporal lleno de grandes canciones.",
+            "Si te gusta el rock alternativo, 'OK Computer' de Radiohead es un álbum imprescindible que combina profundidad lírica con sonidos innovadores.",
+            "Para algo más relajado, 'Rumors' de Fleetwood Mac es un álbum perfecto que mezcla emociones y melodías suaves.",
+            "Si prefieres el rap, 'To Pimp a Butterfly' de Kendrick Lamar es una obra maestra moderna con un fuerte mensaje social.",
+            "Para los amantes de la música electrónica, 'Discovery' de Daft Punk es un álbum icónico que definió el sonido del género.",
+            "Si te interesa el jazz, 'Kind of Blue' de Miles Davis es un álbum esencial que sigue siendo influyente hasta hoy.",
+            "Para algo más contemporáneo, 'Melodrama' de Lorde es un álbum pop con letras profundas y un sonido fresco."
+        ]
+    },
+    "testimonios": {
+        "entradas": [
+            "cuéntame un testimonio", "dime algo sobre experiencias personales", "háblame de una historia inspiradora", "¿algún testimonio interesante?",
+            "dame un ejemplo de superación", "¿qué experiencia te ha marcado?", "cuéntame sobre alguien que haya superado obstáculos", "dame un testimonio conmovedor",
+            "¿qué historia de vida te ha inspirado?", "cuéntame sobre una historia real que te haya impactado", "dime un testimonio motivador", "¿algún relato inspirador?"
+        ],
+        "respuestas": [
+            "Un amigo mío superó una enfermedad grave y ahora dedica su vida a ayudar a otros en situaciones similares, es una fuente de inspiración para todos los que lo conocen.",
+            "Conozco a alguien que, a pesar de haber perdido todo en un desastre natural, reconstruyó su vida y ahora es un exitoso empresario.",
+            "Una madre soltera que conozco crió a tres hijos mientras trabajaba a tiempo completo y estudió por la noche, finalmente obtuvo su título universitario y logró cambiar su vida.",
+            "Un hombre que perdió su trabajo hace unos años ahora es dueño de una pequeña empresa exitosa, demostrando que nunca es tarde para comenzar de nuevo.",
+            "Una persona cercana a mí superó una adicción y ahora ayuda a otros a través de programas de rehabilitación, su historia es un ejemplo de fuerza y perseverancia.",
+            "Conozco a alguien que, después de un grave accidente, se dedicó a la rehabilitación física y mental, y ahora es un atleta profesional.",
+            "Una joven que creció en un ambiente difícil decidió estudiar y obtener una beca completa para la universidad, demostrando que la determinación puede superar cualquier obstáculo."
+        ]
+    },
+    "operation_true":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es verdadero!",
+            "La operacion es correcta!",
+            "El resultado es el indicado!"
+        ]
+    },
+    "operation_false":{
+        "entradas": ["###undefined###"],
+        "respuestas": [
+            "El enunciado es falso!",
+            "La operación esta mal!",
+            "Te equivocaste?, está mal!"
+        ]
+    },
+    "default": {
+        "entradas": ["default"],
+        "respuestas": [
+            "Lo siento, no entiendo esa pregunta.",
+            "No estoy seguro de cómo responder eso.",
+            "Podrías reformular tu pregunta, por favor?",
+            "¿Puedes decirme más sobre lo que necesitas?"
+        ]
+    }
+}
