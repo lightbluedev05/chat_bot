@@ -8,10 +8,6 @@ import customtkinter as ctk
 from PIL import Image
 import os
 
-<<<<<<< Updated upstream
-dataFrame = pd.read_json('chatbot_data.json')
-kevin_image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
-=======
 import sys
 import json
 
@@ -221,7 +217,6 @@ def validate_operation(input):
         
         
 
->>>>>>> Stashed changes
 
 def obtener_saludo():
     hora_actual = datetime.now().hour
@@ -258,10 +253,6 @@ def get_response(tag):
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
     chat_entry.delete(0, 'end')
-<<<<<<< Updated upstream
-    texto_normalizado = normalizar(user_input)
-    tag = get_tag(texto_normalizado)
-=======
 
     ## Check for number or "()"" input
     if user_input[0].isdigit() or user_input[0] == '(':
@@ -278,7 +269,6 @@ def print_response(chat_frame, chat_entry):
 
     #texto_normalizado = normalizar(user_input)
     #tag = get_tag(texto_normalizado)
->>>>>>> Stashed changes
     
     if tag == "despedida":
         print("Chatbot: ¡Adiós! Que tengas un buen día.")
