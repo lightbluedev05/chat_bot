@@ -1,4 +1,44 @@
 {
+    "preprosiciones": {
+        "entradas": [
+            "Ha salido el sol", "Está lloviendo", "Es de noche", "Hace frío", "Es verano", 
+            "Hay tráfico", "Es fin de semana", "El reloj marca las 12", "Estás cansado", 
+            "El cielo está nublado", "Es invierno", "Es lunes por la mañana", "Hay viento fuerte", 
+            "Es feriado", "El río está crecido", "Hay neblina", "Es primavera", 
+            "Se acerca una tormenta", "Hay tormenta eléctrica", "La luna está llena", 
+            "El gato está maullando", "El perro está ladrando", "La comida está lista", 
+            "El autobús ha llegado", "Estás estudiando", "El teléfono está sonando", 
+            "Has terminado de trabajar", "La carretera está mojada", "Los pájaros están cantando", 
+            "Es otoño", "La nieve está cayendo", "n es un número par", "n es un número impar", "n es mayor que 5", 
+            "n es un número primo", "n es divisible por 3", "n+1 es par", 
+            "n es menor que 10", "n es divisible por 2", "n es igual a 0", 
+            "n es negativo", "n es mayor que 0", "n es menor que 0", 
+            "n es divisible por 5", "n es un número compuesto", 
+            "n es múltiplo de 4", "n es igual a 1", "n es un cuadrado perfecto",
+            "n es una raíz cuadrada", "n es mayor que 100", "n es menor que 100",
+            "n es múltiplo de 10", "n es igual a 2"
+        ],
+        "respuestas": [
+            "Entonces hace calor.", "Entonces necesitas un paraguas.", "Entonces es hora de dormir.", "Entonces necesitas abrigarte.", "Entonces puedes ir a la playa.",
+            "Entonces llegarás tarde.", "Entonces puedes descansar.", "Entonces es mediodía.", "Entonces deberías descansar.", 
+            "Entonces podría llover.", "Entonces es mejor quedarse en casa.", "Entonces empieza la semana laboral.", "Entonces debes protegerte.",
+            "Entonces no hay clases.", "Entonces es peligroso acercarse.", "Entonces ten cuidado al conducir.", "Entonces las flores están floreciendo.",
+            "Entonces debes prepararte.", "Entonces no salgas al campo.", "Entonces es una noche especial.",
+            "Entonces tiene hambre.", "Entonces alguien se acerca.", "Entonces es hora de comer.",
+            "Entonces no lo pierdas.", "Entonces estás concentrado.", "Entonces alguien te llama.",
+            "Entonces puedes relajarte.", "Entonces ten cuidado al manejar.", "Entonces es una mañana tranquila.",
+            "Entonces las hojas están cayendo.", "Entonces el paisaje está blanco.", "Entonces n es divisible por 2.", "Entonces n no es divisible por 2.", "Entonces n es mayor que 5.",
+            "Entonces n tiene exactamente dos divisores positivos.", "Entonces n es divisible por 3.",
+            "Entonces n es un número impar.", "Entonces n es menor que 10.", "Entonces n es par.",
+            "Entonces n es el número neutral en suma.", "Entonces n está en la recta numérica negativa.",
+            "Entonces n está en la recta numérica positiva.", "Entonces n es un número negativo.",
+            "Entonces n termina en 0 o 5.", "Entonces n tiene más de dos divisores positivos.",
+            "Entonces n es divisible por 4.", "Entonces n no tiene divisores positivos distintos de 1.",
+            "Entonces n es el cuadrado de otro número.", "Entonces n es un número que, multiplicado por sí mismo, da n.",
+            "Entonces n es un número bastante grande.", "Entonces n es un número pequeño.",
+            "Entonces n es divisible por 10.", "Entonces n es el número primo más pequeño."
+        ]
+    },
     "saludo": {
         "entradas": [
             "hola", "¿cómo estás?", "buenos días", "hey", "qué tal", "saludos", "holi", "hello", "qué onda", "hi", "buenas",
@@ -56,14 +96,14 @@
             "¿cuál es tu nombre completo?", "¿cuál es tu apodo?", "¿cómo te llaman en tu casa?", "¿cuál es tu nombre completo?"
         ],
         "respuestas": [
-            "Soy Kevin Marcelino", "Me llamo Kevin Marcelino", "Puedes llamarme Kevin Marcelino",
-            "Mi nombre es Kevin Marcelino, ¿en qué puedo ayudarte?", "Soy Kevin Marcelino, ¡a tu servicio!",
-            "Me puedes llamar Kevin", "Mi nombre es Kevin", "Soy conocido como Kevin Marcelino",
-            "Me llaman Kevin Marcelino", "Así me llaman: Kevin Marcelino", "Mi nombre completo es Kevin Marcelino",
-            "Puedes decirme simplemente Kevin", "Mi nombre completo es Kevin Marcelino", "Mi nombre completo es Kevin Marcelino",
-            "Me llaman Kevin Marcelino en casa", "Soy conocido como Kevin Marcelino", "Puedes llamarme simplemente Kevin",
-            "Me conocen como Kevin Marcelino", "Mi nombre es Kevin Marcelino, aunque puedes llamarme Kevin",
-            "Mi nombre completo es Kevin M.", "Puedes llamarme simplemente Kevin M."
+            "Soy ChatBot 5.0", "Me llamo ChatBot 5.0", "Puedes llamarme ChatBot 5.0",
+            "Mi nombre es ChatBot 5.0, ¿en qué puedo ayudarte?", "Soy ChatBot 5.0, ¡a tu servicio!",
+            "Me puedes llamar ChatBot", "Mi nombre es ChatBot", "Soy conocido como ChatBot 5.0",
+            "Me llaman ChatBot 5.0", "Así me llaman: ChatBot 5.0", "Mi nombre completo es ChatBot 5.0",
+            "Puedes decirme simplemente ChatBot", "Mi nombre completo es ChatBot 5.0", "Mi nombre completo es ChatBot 5.0",
+            "Me llaman ChatBot 5.0 en casa", "Soy conocido como ChatBot 5.0", "Puedes llamarme simplemente ChatBot",
+            "Me conocen como ChatBot 5.0", "Mi nombre es ChatBot 5.0, aunque puedes llamarme ChatBot",
+            "Mi nombre completo es ChatBot 5.0", "Puedes llamarme simplemente ChatBot 5.0"
         ]
     },
     "agradecimiento": {

@@ -97,25 +97,12 @@ def validate_operation(input):
                 else:
                     terms[count] = terms[count] + " " + str(opList[countMK2])
                     countMK2 +=1
-                
-                
-        
-        #print(f"{terms[0]} = {terms[1]}")
-
-
         if eval(terms[0]) == eval(terms[1]):
             return "operation_true"
         else:
             return "operation_false"
-
-
-
     else:
         return "default"
-        
-        
-        
-
 
 def obtener_saludo():
     hora_actual = datetime.now().hour
@@ -157,8 +144,16 @@ def get_tag(user_input):
 
 
 #! Devolver respuesta
-def get_response(tag):
-    return random.choice(dataFrame[tag]['respuestas'])
+def get_response(tag, user_input):
+    if tag == "preprosiciones":
+        entradas_normalizadas = [normalizar(entrada) for entrada in dataFrame[tag]["entradas"]]
+        for i in range(len(entradas_normalizadas)):
+            if normalizar(user_input) in entradas_normalizadas[i]:
+                return dataFrame[tag]["respuestas"][i]
+        else:
+            return "No se encontró coincidencia."        
+    else:
+        return random.choice(dataFrame[tag]['respuestas'])
 
 def print_response(chat_frame, chat_entry):
     user_input = chat_entry.get()
@@ -184,7 +179,9 @@ def print_response(chat_frame, chat_entry):
     question_label = ctk.CTkLabel(question_frame, justify="right", corner_radius=5, wraplength=300, fg_color="#DADADA", text=user_input, font=("Arial", 12), text_color="black", anchor="e")
     question_label.pack(side="right", padx=(80,0))
     
-    response = get_response(tag)
+    print(tag)
+    response = get_response(tag, user_input)
+    print(tag)
     
     answer_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
     answer_frame.pack(side="top", fill="x", padx=5, pady=(5,0))
@@ -212,7 +209,7 @@ def main():
     chat_frame.pack(fill="both", expand=True, padx=40, pady=20)
     
     entry_frame = ctk.CTkFrame(root, fg_color="#232323")
-    entry_frame.pack(fill="x", padx=20, pady=(0,10))
+    entry_frame.pack(fill="x", padx=20, pady=(0,40))
     
     chat_entry = ctk.CTkEntry(entry_frame, font=("Arial", 12),text_color="black", width=50, fg_color="#EBEBEB")
     chat_entry.pack(side="left", padx=20, fill="x", expand=True)
@@ -221,9 +218,6 @@ def main():
     button_entry.pack(side="right", padx=(0,20))
     
     chat_entry.bind("<Return>", lambda event: print_response(chat_frame, chat_entry))
-    
-    made_label = ctk.CTkLabel(root, text="Hecho por: Ricardo, Miguel y Mihael", font=("Arial", 12), text_color="#7E7E7E")
-    made_label.pack(side="bottom", fill="x", pady=(0,20))
     
     
     
@@ -235,22 +229,6 @@ def main():
     hello_label.pack(side="left", padx=(5,0))
     
     root.mainloop()
-    
-    
-    while True:
-        user_input = input("Tú: ")
-        if user_input[0].isdigit() :
-            if validate_operation(user_input) is False:
-                response = get_response("default")
-                print(f"Chatbot: {response}")
-
-        else:
-            texto_normalizado = normalizar(user_input)
-            tag = get_tag(texto_normalizado)
-            response = get_response(tag)
-            print(f"Chatbot: {response}")
-            if tag == "despedida":
-                break
 
 if __name__ == "__main__":
     main()
