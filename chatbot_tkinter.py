@@ -12,7 +12,7 @@ import sys
 import json
 
 dataFrame = pd.read_json('chatbot_data3.json')
-image = ctk.CTkImage(Image.open("logo_kevin.png"), size=(30, 30))
+image = ctk.CTkImage(Image.open("logo.png"), size=(30, 30))
 
 ## FUNCIONES PARA LA GENERACION DE TEXTOOOOOOO *************************************************************
 
@@ -293,9 +293,9 @@ def print_response(chat_frame, chat_entry):
     question_label = ctk.CTkLabel(question_frame, justify="right", corner_radius=5, wraplength=300, fg_color="#DADADA", text=user_input, font=("Arial", 12), text_color="black", anchor="e")
     question_label.pack(side="right", padx=(80,0))
     
-    print(tag)
-    response = get_response(tag, user_input)
-    print(tag)
+    #print(tag)
+    response = get_response(tag)
+    #print(tag)
     
     answer_frame = ctk.CTkFrame(chat_frame, fg_color="#EBEBEB")
     answer_frame.pack(side="top", fill="x", padx=5, pady=(5,0))
