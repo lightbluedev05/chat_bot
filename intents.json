@@ -1,0 +1,49 @@
+{
+    "intents":[
+        {
+            "tag":"saludo",
+            "patterns": ["hola","¿que tal?","buenos dias","buenas tardes","buenas noches"],
+            "responses": [
+                "¡Hola! ¿Cómo puedo ayudarte hoy?",
+                "¡Hola! ¿Qué tal?",
+                "¡Hola! ¿En qué puedo asistirte?",
+                "¿Qué necesitas?"
+            ]
+        },
+        {
+            "tag":"despedida",
+            "patterns":["adios","hasta luego","que te vaya bien","nos vemos","hasta pronto","chao","me voy"],
+            "responses":["Adios!","Que te vaya bien!","Espero volver a verte!","Hasta pronto!", "Hasta nunca!"]
+        },
+        {
+            "tag":"nombre",
+            "patterns": ["¿como te llamas?","¿cual es tu nombre?","¿como deberia llamarte?","¿me dices tu nombre?","¿cual es tu apodo?","¿tienes un pseudonimo?","¿como te llaman?"],
+            "responses":["Soy el kevinBot v6.0","Me llamo Kevin","Puedes llamarme Kevin","Definitivamente no es Kevin"]
+        },
+        {
+            "tag":"sentimiento",
+            "patterns":["¿como te sientes?","¿estas bien?","¿como estas?","¿te encuentras bien?","¿paso algo?","¿algo ocurrio?","¿algo malo paso?","¿algo bueno paso?"],
+            "responses":[]
+        },
+        {
+            "tag":"edad",
+            "patterns":[],
+            "responses":[]
+        },
+        {
+            "tag":"gustos",
+            "patterns":[],
+            "responses":[]
+        },
+        {
+            "tag:":"amigos",
+            "patterns":[],
+            "responses":[]
+        },
+        {
+            "tag":"kevin",
+            "patterns":[],
+            "responses":[]
+        }
+    ]
+}
